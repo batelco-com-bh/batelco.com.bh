@@ -1,0 +1,2429 @@
+<html class="loaded" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui"><title>
+	
+    Login
+
+</title><link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-7FFYLZKCX6&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-M7LMNM8"></script><script src="/eservices/resources/js/polyfill.min.js" type="text/javascript"></script>
+
+    <!-- App Settings -->
+    <script>
+        window.applicationName = 'eservices';
+        window.appRoot = '/eservices';
+        window.isEnterprise = 'False'.toLowerCase() === 'true';
+        window.isGlobal = 'False'.toLowerCase() === 'true';
+    </script>
+    <!-- End App Settings -->
+    
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-M7LMNM8');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Start of LiveChat (www.livechatinc.com) code -->
+    <script>
+        window.__lc = window.__lc || {};
+        window.__lc.license = parseInt('7632681');
+        // window.__lc.license = parseInt('11577808');
+        
+        (function (n, t, c) { function i(n) { return e._h ? e._h.apply(null, n) : e._q.push(n) } var e = { _q: [], _h: null, _v: "2.0", on: function () { i(["on", c.call(arguments)]) }, once: function () { i(["once", c.call(arguments)]) }, off: function () { i(["off", c.call(arguments)]) }, get: function () { if (!e._h) throw new Error("[LiveChatWidget] You can't use getters before load."); return i(["get", c.call(arguments)]) }, call: function () { i(["call", c.call(arguments)]) }, init: function () { var n = t.createElement("script"); n.async = !0, n.type = "text/javascript", n.src = "https://cdn.livechatinc.com/tracking.js", t.head.appendChild(n) } }; !n.__lc.asyncInit && e.init(), n.LiveChatWidget = n.LiveChatWidget || e }(window, document, [].slice))
+    </script><script async="" type="text/javascript" src="https://cdn.livechatinc.com/tracking.js"></script>
+    
+    <script>
+        LiveChatWidget.on('ready', function (initialData) {
+            var state = initialData.state;
+            var customerData = initialData.customerData;
+
+            switch (customerData.status) {
+                case 'queued':
+                case 'chatting':
+                    // customer is currently chatting
+                    break;
+                case 'invited':
+                case 'browsing':
+                    // customer is in idle state, not queued, not chatting, and didn't receive an invitation
+                    LiveChatWidget.call('hide');
+                    break;
+            }
+        });
+    </script>
+    <!-- End of LiveChat code -->
+
+    <!-- BEGIN FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i%7CMuli:300,400,500,700" rel="stylesheet">
+    <!-- END FONTS -->
+
+    
+
+    <!-- BEGIN VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="https://www.e.batelco.com/eservices/resources/css/bootstrap.min.css"><link rel="stylesheet" type="text/css" href="https://www.e.batelco.com/eservices/resources/DashFiles/css/vendors.min.css"><link rel="stylesheet" type="text/css" href="https://www.e.batelco.com/eservices/resources/css/bootstrap-vue.min.css"><link rel="stylesheet" type="text/css" href="https://www.e.batelco.com/eservices/resources/css/vue-slick-carousel.css"><link rel="stylesheet" type="text/css" href="https://www.e.batelco.com/eservices/resources/css/vue-slick-carousel-theme.css"><link rel="stylesheet" type="text/css" href="https://www.e.batelco.com/eservices/resources/DashFiles/vendors/css/extensions/dragula.min.css">
+    <!-- END VENDOR CSS-->
+
+    <!-- BEGIN ROBUST CSS-->
+    <link rel="stylesheet" type="text/css" href="https://www.e.batelco.com/eservices/resources/css/bootstrap-override.css"><link rel="stylesheet" type="text/css" href="https://www.e.batelco.com/eservices/resources/css/bootstrap-extra.css"><link rel="stylesheet" type="text/css" href="https://www.e.batelco.com/eservices/resources/DashFiles/css/app.min.css">
+    <!-- END ROBUST CSS-->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"><link rel="stylesheet" type="text/css" href="https://www.e.batelco.com/eservices/resources/DashFiles/RevampCustomFiles/material-switch.css"><link rel="stylesheet" type="text/css" href="https://www.e.batelco.com/eservices/resources/css/fonts-averta.css"><link rel="stylesheet" type="text/css" href="https://www.e.batelco.com/eservices/resources/css/fonts-extra.css">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" type="text/css" href="https://www.e.batelco.com/eservices/resources/DashFiles/RevampCustomFiles/shimmer.css"><link rel="stylesheet" type="text/css" href="https://www.e.batelco.com/eservices/resources/DashFiles/RevampCustomFiles/HeadFoot.css"><link rel="stylesheet" type="text/css" href="https://www.e.batelco.com/eservices/resources/DashFiles/RevampCustomFiles/header.css"><link rel="stylesheet" type="text/css" href="https://www.e.batelco.com/eservices/resources/css/nav-menu.css"><link rel="stylesheet" type="text/css" href="https://www.e.batelco.com/eservices/resources/DashFiles/RevampCustomFiles/style.css"><link rel="stylesheet" type="text/css" href="https://www.e.batelco.com/eservices/resources/DashFiles/RevampCustomFiles/newstyle.css"><link rel="stylesheet" type="text/css" href="https://www.e.batelco.com/eservices/resources/DashFiles/RevampCustomFiles/upgrade_package.css"><link rel="stylesheet" type="text/css" href="https://www.e.batelco.com/eservices/resources/DashFiles/RevampCustomFiles/adds-ons.css"><link rel="stylesheet" type="text/css" href="https://www.e.batelco.com/eservices/resources/DashFiles/RevampCustomFiles/installments.css"><link rel="stylesheet" type="text/css" href="https://www.e.batelco.com/eservices/resources/DashFiles/RevampCustomFiles/manage-notification.css"><link rel="stylesheet" type="text/css" href="https://www.e.batelco.com/eservices/resources/DashFiles/RevampCustomFiles/modal-popup.css"><link rel="stylesheet" type="text/css" href="https://www.e.batelco.com/eservices/resources/DashFiles/RevampCustomFiles/checkbox-custom.css"><link rel="stylesheet" type="text/css" href="https://www.e.batelco.com/eservices/resources/DashFiles/RevampCustomFiles/revamp-input.css"><link rel="stylesheet" type="text/css" href="https://www.e.batelco.com/eservices/resources/css/select2.css"><link rel="stylesheet" type="text/css" href="https://www.e.batelco.com/eservices/resources/css/HoldOn.min.css"><link rel="stylesheet" type="text/css" href="https://www.e.batelco.com/eservices/resources/css/CustomHoldOn.css"><link rel="stylesheet" type="text/css" href="https://www.e.batelco.com/eservices/resources/css/vue-extra.css"><link rel="stylesheet" type="text/css" href="https://www.e.batelco.com/eservices/resources/btc-icons/style.css"><link rel="stylesheet" type="text/css" href="https://www.e.batelco.com/eservices/resources/btc-icons/util.css"><link rel="stylesheet" type="text/css" href="https://www.e.batelco.com/eservices/resources/DashFiles/RevampCustomFiles/general.css"><link href="https://www.e.batelco.com/eservices/resources/DashFiles/RevampCustomFiles/freshworks.css" rel="stylesheet"><link href="https://www.e.batelco.com/eservices/resources/globalchart/css/highcharts.css" rel="stylesheet">
+    <link href="https://www.e.batelco.com/eservices/resources/DashFiles/RevampCustomFiles/auth_pages_style.css" rel="stylesheet">
+
+
+    <!-- BEING MUST JS [Since some pages are using $(document).ready()] -->
+    <script src="/eservices/resources/js/babel.min.js" charset="utf-8" type="text/javascript"></script>
+    <script src="/eservices/resources/js/loader-scripts.js" charset="utf-8" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+    <!-- END MUST JS -->
+
+    <script type="text/javascript" src="/eservices/resources/js/gtm-jquery.js"></script>
+    <script type="text/javascript" src="/eservices/resources/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="/eservices/resources/js/vendors.min.js"></script>
+    <script type="text/javascript" src="/eservices/resources/js/uuid.min.js"></script>
+    <script type="text/javascript" src="/eservices/resources/js/vue.js"></script>
+    <script type="text/javascript" src="/eservices/resources/js/vue-router.js"></script>
+    <script type="text/javascript" src="/eservices/resources/js/vue-i18n.min.js"></script>
+    <script type="text/javascript" src="/eservices/resources/js/vuelidate.min.js"></script>
+    <script type="text/javascript" src="/eservices/resources/js/validators.min.js"></script>
+    <script type="text/javascript" src="/eservices/resources/js/vue-slick-carousel.umd.js"></script>
+    <script type="text/babel" src="/eservices/resources/js/vue-components.js" data-presets="es2015, es2016, es2017, stage-3"></script>
+    <script type="text/javascript" src="/eservices/resources/js/bootstrap-vue.min.js"></script>
+    <script type="text/javascript" src="/eservices/resources/js/bootstrap-vue-icons.min.js"></script>
+    <script type="text/javascript" src="/eservices/resources/js/dragula.min.js"></script>
+    <script type="text/javascript" src="/eservices/resources/js/app-menu.min.js"></script>
+    <script type="text/javascript" src="/eservices/resources/js/app.min.js"></script>
+    <script type="text/javascript" src="/eservices/resources/js/customizer.min.js"></script>
+    <script type="text/javascript" src="/eservices/resources/js/draggable.min.js"></script>
+    <script type="text/javascript" src="/eservices/resources/js/bootbox.min.js"></script>
+    <script type="text/javascript" src="/eservices/resources/DashFiles/RevampCustomFiles/custom_js.js"></script>
+    <script type="text/javascript" src="/eservices/resources/js/select2.full.js"></script>
+    <script type="text/javascript" src="/eservices/resources/js/HoldOn.min.js"></script>
+    <script type="text/javascript" src="/eservices/resources/js/CustomHoldOn.js"></script>
+    <script type="text/javascript" src="/eservices/resources/js/jquery.redirect.js"></script>
+    <script type="text/javascript" src="/eservices/resources/js/parsley.js"></script>
+
+    <script type="text/javascript" src="/eservices/resources/globalchart/js/highcharts.js"></script>
+    <script type="text/javascript" src="/eservices/resources/globalchart/js/highcharts-data.js"></script>
+    <script type="text/javascript" src="/eservices/resources/globalchart/js/moment.js"></script>
+    <script type="text/javascript" src="/eservices/resources/globalchart/js/highcharts-implementation.js"></script>
+<script>"use strict";
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+if (typeof Vue !== "undefined") {
+  /**
+   * Select 2 Wrapper
+   */
+  Vue.component("select2", {
+    props: ["settings", "options", "value"],
+    template: "<select><slot></slot></select>",
+    data: function data() {
+      return {
+        debounceTimeout: null
+      };
+    },
+    mounted: function mounted() {
+      var _this = this;
+
+      _this.initializing();
+
+      $(window).on('resize', function () {
+        _this.debounceInitializing();
+      });
+
+      _this.$root.$on('select2:reinit', function () {
+        _this.debounceInitializing();
+      });
+    },
+    methods: {
+      initializing: function initializing() {
+        var vm = this;
+        var select2Options = {};
+
+        if (_typeof(this.settings) === 'object') {
+          select2Options = _objectSpread({}, this.settings, {
+            select2Options: select2Options
+          });
+        }
+
+        if (typeof this.options !== 'undefined' && Array.isArray(this.options)) {
+          select2Options = _objectSpread({}, this.settings, {
+            select2Options: select2Options
+          });
+        }
+
+        $(this.$el) // init select2
+        .select2(_objectSpread({}, {
+          data: this.options
+        }, select2Options)).val(this.value).trigger("change") // emit event on change.
+        .on("change", function () {
+          vm.$emit("input", this.value);
+        });
+      },
+      debounceInitializing: function debounceInitializing() {
+        var _this = this;
+
+        if (this.debounceTimeout !== null) {
+          clearTimeout(this.debounceTimeout);
+        }
+
+        this.debounceTimeout = setTimeout(function () {
+          _this.initializing();
+        }, 200);
+      }
+    },
+    watch: {
+      value: function value(_value) {
+        // update value
+        $(this.$el).val(_value).trigger("change");
+      },
+      options: function options(_options) {
+        // update options
+        $(this.$el).empty().select2({
+          data: _options
+        });
+      }
+    },
+    destroyed: function destroyed() {
+      $(this.$el).off().select2("destroy");
+    }
+  });
+  /**
+   * Slick Slider
+   */
+
+  Vue.component("VueSlickCarousel", window["vue-slick-carousel"]);
+  Vue.directive("gtmCta", {
+    // When the bound element is inserted into the DOM...
+    bind: function bind(el, binding, vnode) {
+      $(el).on('click touch', function () {
+        var event_action = 'cta - ' + binding.value;
+        var event_category = undefined;
+        var event_label = $(el).text().trim();
+        var event_value = undefined; // Ignoring undefined, null, empty, void calls, and empty hash
+
+        if (typeof $(el).attr('href') === 'string' && $(el).attr('href') !== '' && $(el).attr('href') !== 'javascript:void(0)' && $(el).attr('href') !== 'javascript:void(0);' && $(el).attr('href') !== '#') {
+          event_value = $(el).attr('href');
+        } // Focus the element
+
+
+        if (typeof $(el).attr('gtm-category') === 'string' && $(el).attr('gtm-category') !== '') {
+          event_category = $(el).attr('gtm-category');
+        }
+
+        window.dataLayer.push({
+          'event': 'gaEvent',
+          'eventCategory': event_category,
+          'eventAction': event_action,
+          'eventLabel': event_label,
+          'eventValue': event_value
+        });
+      });
+    }
+  });
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInZ1ZS1jb21wb25lbnRzLmpzIl0sIm5hbWVzIjpbIlZ1ZSIsImNvbXBvbmVudCIsInByb3BzIiwidGVtcGxhdGUiLCJkYXRhIiwiZGVib3VuY2VUaW1lb3V0IiwibW91bnRlZCIsIl90aGlzIiwiaW5pdGlhbGl6aW5nIiwiJCIsIndpbmRvdyIsIm9uIiwiZGVib3VuY2VJbml0aWFsaXppbmciLCIkcm9vdCIsIiRvbiIsIm1ldGhvZHMiLCJ2bSIsInNlbGVjdDJPcHRpb25zIiwic2V0dGluZ3MiLCJvcHRpb25zIiwiQXJyYXkiLCJpc0FycmF5IiwiJGVsIiwic2VsZWN0MiIsInZhbCIsInZhbHVlIiwidHJpZ2dlciIsIiRlbWl0IiwiY2xlYXJUaW1lb3V0Iiwic2V0VGltZW91dCIsIndhdGNoIiwiZW1wdHkiLCJkZXN0cm95ZWQiLCJvZmYiLCJkaXJlY3RpdmUiLCJiaW5kIiwiZWwiLCJiaW5kaW5nIiwidm5vZGUiLCJldmVudF9hY3Rpb24iLCJldmVudF9jYXRlZ29yeSIsInVuZGVmaW5lZCIsImV2ZW50X2xhYmVsIiwidGV4dCIsInRyaW0iLCJldmVudF92YWx1ZSIsImF0dHIiLCJkYXRhTGF5ZXIiLCJwdXNoIl0sIm1hcHBpbmdzIjoiOzs7Ozs7OztBQUFBLElBQUksT0FBT0EsR0FBUCxLQUFlLFdBQW5CLEVBQWdDO0FBQzVCOzs7QUFHQUEsRUFBQUEsR0FBRyxDQUFDQyxTQUFKLENBQWMsU0FBZCxFQUF5QjtBQUNyQkMsSUFBQUEsS0FBSyxFQUFFLENBQUMsVUFBRCxFQUFhLFNBQWIsRUFBd0IsT0FBeEIsQ0FEYztBQUVyQkMsSUFBQUEsUUFBUSxFQUFFLGdDQUZXO0FBR3JCQyxJQUFBQSxJQUFJLEVBQUUsZ0JBQVk7QUFDZCxhQUFPO0FBQ0hDLFFBQUFBLGVBQWUsRUFBRTtBQURkLE9BQVA7QUFHSCxLQVBvQjtBQVFyQkMsSUFBQUEsT0FBTyxFQUFFLG1CQUFZO0FBQ2pCLFVBQUlDLEtBQUssR0FBRyxJQUFaOztBQUNBQSxNQUFBQSxLQUFLLENBQUNDLFlBQU47O0FBRUFDLE1BQUFBLENBQUMsQ0FBQ0MsTUFBRCxDQUFELENBQVVDLEVBQVYsQ0FBYSxRQUFiLEVBQXVCLFlBQVk7QUFDL0JKLFFBQUFBLEtBQUssQ0FBQ0ssb0JBQU47QUFDSCxPQUZEOztBQUlBTCxNQUFBQSxLQUFLLENBQUNNLEtBQU4sQ0FBWUMsR0FBWixDQUFnQixnQkFBaEIsRUFBa0MsWUFBWTtBQUMxQ1AsUUFBQUEsS0FBSyxDQUFDSyxvQkFBTjtBQUNILE9BRkQ7QUFHSCxLQW5Cb0I7QUFvQnJCRyxJQUFBQSxPQUFPLEVBQUU7QUFDTFAsTUFBQUEsWUFBWSxFQUFFLHdCQUFZO0FBQ3RCLFlBQUlRLEVBQUUsR0FBRyxJQUFUO0FBQ0EsWUFBSUMsY0FBYyxHQUFHLEVBQXJCOztBQUVBLFlBQUksUUFBTyxLQUFLQyxRQUFaLE1BQXlCLFFBQTdCLEVBQXVDO0FBQ25DRCxVQUFBQSxjQUFjLHFCQUFPLEtBQUtDLFFBQVo7QUFBc0JELFlBQUFBLGNBQWMsRUFBZEE7QUFBdEIsWUFBZDtBQUNIOztBQUNELFlBQUksT0FBTyxLQUFLRSxPQUFaLEtBQXdCLFdBQXhCLElBQXVDQyxLQUFLLENBQUNDLE9BQU4sQ0FBYyxLQUFLRixPQUFuQixDQUEzQyxFQUF3RTtBQUNwRUYsVUFBQUEsY0FBYyxxQkFBTyxLQUFLQyxRQUFaO0FBQXNCRCxZQUFBQSxjQUFjLEVBQWRBO0FBQXRCLFlBQWQ7QUFDSDs7QUFFRFIsUUFBQUEsQ0FBQyxDQUFDLEtBQUthLEdBQU4sQ0FBRCxDQUNJO0FBREosU0FFS0MsT0FGTCxtQkFFaUI7QUFBQ25CLFVBQUFBLElBQUksRUFBRSxLQUFLZTtBQUFaLFNBRmpCLEVBRTBDRixjQUYxQyxHQUdLTyxHQUhMLENBR1MsS0FBS0MsS0FIZCxFQUlLQyxPQUpMLENBSWEsUUFKYixFQUtJO0FBTEosU0FNS2YsRUFOTCxDQU1RLFFBTlIsRUFNa0IsWUFBWTtBQUN0QkssVUFBQUEsRUFBRSxDQUFDVyxLQUFILENBQVMsT0FBVCxFQUFrQixLQUFLRixLQUF2QjtBQUNILFNBUkw7QUFTSCxPQXJCSTtBQXNCTGIsTUFBQUEsb0JBQW9CLEVBQUUsZ0NBQVk7QUFDOUIsWUFBSUwsS0FBSyxHQUFHLElBQVo7O0FBRUEsWUFBSSxLQUFLRixlQUFMLEtBQXlCLElBQTdCLEVBQW1DO0FBQy9CdUIsVUFBQUEsWUFBWSxDQUFDLEtBQUt2QixlQUFOLENBQVo7QUFDSDs7QUFFRCxhQUFLQSxlQUFMLEdBQXVCd0IsVUFBVSxDQUFDLFlBQVk7QUFDMUN0QixVQUFBQSxLQUFLLENBQUNDLFlBQU47QUFDSCxTQUZnQyxFQUU5QixHQUY4QixDQUFqQztBQUdIO0FBaENJLEtBcEJZO0FBc0RyQnNCLElBQUFBLEtBQUssRUFBRTtBQUNITCxNQUFBQSxLQUFLLEVBQUUsZUFBVUEsTUFBVixFQUFpQjtBQUNwQjtBQUNBaEIsUUFBQUEsQ0FBQyxDQUFDLEtBQUthLEdBQU4sQ0FBRCxDQUNLRSxHQURMLENBQ1NDLE1BRFQsRUFFS0MsT0FGTCxDQUVhLFFBRmI7QUFHSCxPQU5FO0FBT0hQLE1BQUFBLE9BQU8sRUFBRSxpQkFBVUEsUUFBVixFQUFtQjtBQUN4QjtBQUNBVixRQUFBQSxDQUFDLENBQUMsS0FBS2EsR0FBTixDQUFELENBQ0tTLEtBREwsR0FFS1IsT0FGTCxDQUVhO0FBQUNuQixVQUFBQSxJQUFJLEVBQUVlO0FBQVAsU0FGYjtBQUdIO0FBWkUsS0F0RGM7QUFvRXJCYSxJQUFBQSxTQUFTLEVBQUUscUJBQVk7QUFDbkJ2QixNQUFBQSxDQUFDLENBQUMsS0FBS2EsR0FBTixDQUFELENBQ0tXLEdBREwsR0FFS1YsT0FGTCxDQUVhLFNBRmI7QUFHSDtBQXhFb0IsR0FBekI7QUEyRUE7Ozs7QUFHQXZCLEVBQUFBLEdBQUcsQ0FBQ0MsU0FBSixDQUFjLGtCQUFkLEVBQWtDUyxNQUFNLENBQUMsb0JBQUQsQ0FBeEM7QUFFQVYsRUFBQUEsR0FBRyxDQUFDa0MsU0FBSixDQUFjLFFBQWQsRUFBd0I7QUFDcEI7QUFDQUMsSUFBQUEsSUFBSSxFQUFFLGNBQVVDLEVBQVYsRUFBY0MsT0FBZCxFQUF1QkMsS0FBdkIsRUFBOEI7QUFDaEM3QixNQUFBQSxDQUFDLENBQUMyQixFQUFELENBQUQsQ0FBTXpCLEVBQU4sQ0FBUyxhQUFULEVBQXdCLFlBQVk7QUFDaEMsWUFBSTRCLFlBQVksR0FBRyxXQUFXRixPQUFPLENBQUNaLEtBQXRDO0FBQ0EsWUFBSWUsY0FBYyxHQUFHQyxTQUFyQjtBQUNBLFlBQUlDLFdBQVcsR0FBR2pDLENBQUMsQ0FBQzJCLEVBQUQsQ0FBRCxDQUFNTyxJQUFOLEdBQWFDLElBQWIsRUFBbEI7QUFDQSxZQUFJQyxXQUFXLEdBQUdKLFNBQWxCLENBSmdDLENBTWhDOztBQUNBLFlBQUksT0FBT2hDLENBQUMsQ0FBQzJCLEVBQUQsQ0FBRCxDQUFNVSxJQUFOLENBQVcsTUFBWCxDQUFQLEtBQThCLFFBQTlCLElBQ0dyQyxDQUFDLENBQUMyQixFQUFELENBQUQsQ0FBTVUsSUFBTixDQUFXLE1BQVgsTUFBdUIsRUFEMUIsSUFFR3JDLENBQUMsQ0FBQzJCLEVBQUQsQ0FBRCxDQUFNVSxJQUFOLENBQVcsTUFBWCxNQUF1QixvQkFGMUIsSUFHR3JDLENBQUMsQ0FBQzJCLEVBQUQsQ0FBRCxDQUFNVSxJQUFOLENBQVcsTUFBWCxNQUF1QixxQkFIMUIsSUFJR3JDLENBQUMsQ0FBQzJCLEVBQUQsQ0FBRCxDQUFNVSxJQUFOLENBQVcsTUFBWCxNQUF1QixHQUo5QixFQUltQztBQUMvQkQsVUFBQUEsV0FBVyxHQUFHcEMsQ0FBQyxDQUFDMkIsRUFBRCxDQUFELENBQU1VLElBQU4sQ0FBVyxNQUFYLENBQWQ7QUFDSCxTQWIrQixDQWVoQzs7O0FBQ0EsWUFBSSxPQUFPckMsQ0FBQyxDQUFDMkIsRUFBRCxDQUFELENBQU1VLElBQU4sQ0FBVyxjQUFYLENBQVAsS0FBc0MsUUFBdEMsSUFBa0RyQyxDQUFDLENBQUMyQixFQUFELENBQUQsQ0FBTVUsSUFBTixDQUFXLGNBQVgsTUFBK0IsRUFBckYsRUFBeUY7QUFDckZOLFVBQUFBLGNBQWMsR0FBRy9CLENBQUMsQ0FBQzJCLEVBQUQsQ0FBRCxDQUFNVSxJQUFOLENBQVcsY0FBWCxDQUFqQjtBQUNIOztBQUVEcEMsUUFBQUEsTUFBTSxDQUFDcUMsU0FBUCxDQUFpQkMsSUFBakIsQ0FBc0I7QUFDbEIsbUJBQVMsU0FEUztBQUVsQiwyQkFBaUJSLGNBRkM7QUFHbEIseUJBQWVELFlBSEc7QUFJbEIsd0JBQWNHLFdBSkk7QUFLbEIsd0JBQWNHO0FBTEksU0FBdEI7QUFPSCxPQTNCRDtBQTRCSDtBQS9CbUIsR0FBeEI7QUFpQ0giLCJzb3VyY2VzQ29udGVudCI6WyJpZiAodHlwZW9mIFZ1ZSAhPT0gXCJ1bmRlZmluZWRcIikge1xyXG4gICAgLyoqXHJcbiAgICAgKiBTZWxlY3QgMiBXcmFwcGVyXHJcbiAgICAgKi9cclxuICAgIFZ1ZS5jb21wb25lbnQoXCJzZWxlY3QyXCIsIHtcclxuICAgICAgICBwcm9wczogW1wic2V0dGluZ3NcIiwgXCJvcHRpb25zXCIsIFwidmFsdWVcIl0sXHJcbiAgICAgICAgdGVtcGxhdGU6IFwiPHNlbGVjdD48c2xvdD48L3Nsb3Q+PC9zZWxlY3Q+XCIsXHJcbiAgICAgICAgZGF0YTogZnVuY3Rpb24gKCkge1xyXG4gICAgICAgICAgICByZXR1cm4ge1xyXG4gICAgICAgICAgICAgICAgZGVib3VuY2VUaW1lb3V0OiBudWxsXHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICB9LFxyXG4gICAgICAgIG1vdW50ZWQ6IGZ1bmN0aW9uICgpIHtcclxuICAgICAgICAgICAgdmFyIF90aGlzID0gdGhpcztcclxuICAgICAgICAgICAgX3RoaXMuaW5pdGlhbGl6aW5nKCk7XHJcblxyXG4gICAgICAgICAgICAkKHdpbmRvdykub24oJ3Jlc2l6ZScsIGZ1bmN0aW9uICgpIHtcclxuICAgICAgICAgICAgICAgIF90aGlzLmRlYm91bmNlSW5pdGlhbGl6aW5nKCk7XHJcbiAgICAgICAgICAgIH0pO1xyXG4gICAgICAgICAgICBcclxuICAgICAgICAgICAgX3RoaXMuJHJvb3QuJG9uKCdzZWxlY3QyOnJlaW5pdCcsIGZ1bmN0aW9uICgpIHtcclxuICAgICAgICAgICAgICAgIF90aGlzLmRlYm91bmNlSW5pdGlhbGl6aW5nKCk7XHJcbiAgICAgICAgICAgIH0pO1xyXG4gICAgICAgIH0sXHJcbiAgICAgICAgbWV0aG9kczoge1xyXG4gICAgICAgICAgICBpbml0aWFsaXppbmc6IGZ1bmN0aW9uICgpIHtcclxuICAgICAgICAgICAgICAgIHZhciB2bSA9IHRoaXM7XHJcbiAgICAgICAgICAgICAgICB2YXIgc2VsZWN0Mk9wdGlvbnMgPSB7fTtcclxuICAgICAgICAgICAgICAgIFxyXG4gICAgICAgICAgICAgICAgaWYgKHR5cGVvZiB0aGlzLnNldHRpbmdzID09PSAnb2JqZWN0Jykge1xyXG4gICAgICAgICAgICAgICAgICAgIHNlbGVjdDJPcHRpb25zID0gey4uLnRoaXMuc2V0dGluZ3MsIHNlbGVjdDJPcHRpb25zfTtcclxuICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgIGlmICh0eXBlb2YgdGhpcy5vcHRpb25zICE9PSAndW5kZWZpbmVkJyAmJiBBcnJheS5pc0FycmF5KHRoaXMub3B0aW9ucykpIHtcclxuICAgICAgICAgICAgICAgICAgICBzZWxlY3QyT3B0aW9ucyA9IHsuLi50aGlzLnNldHRpbmdzLCBzZWxlY3QyT3B0aW9uc307XHJcbiAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICBcclxuICAgICAgICAgICAgICAgICQodGhpcy4kZWwpXHJcbiAgICAgICAgICAgICAgICAgICAgLy8gaW5pdCBzZWxlY3QyXHJcbiAgICAgICAgICAgICAgICAgICAgLnNlbGVjdDIoey4uLntkYXRhOiB0aGlzLm9wdGlvbnN9LCAuLi5zZWxlY3QyT3B0aW9uc30pXHJcbiAgICAgICAgICAgICAgICAgICAgLnZhbCh0aGlzLnZhbHVlKVxyXG4gICAgICAgICAgICAgICAgICAgIC50cmlnZ2VyKFwiY2hhbmdlXCIpXHJcbiAgICAgICAgICAgICAgICAgICAgLy8gZW1pdCBldmVudCBvbiBjaGFuZ2UuXHJcbiAgICAgICAgICAgICAgICAgICAgLm9uKFwiY2hhbmdlXCIsIGZ1bmN0aW9uICgpIHtcclxuICAgICAgICAgICAgICAgICAgICAgICAgdm0uJGVtaXQoXCJpbnB1dFwiLCB0aGlzLnZhbHVlKTtcclxuICAgICAgICAgICAgICAgICAgICB9KTtcclxuICAgICAgICAgICAgfSxcclxuICAgICAgICAgICAgZGVib3VuY2VJbml0aWFsaXppbmc6IGZ1bmN0aW9uICgpIHtcclxuICAgICAgICAgICAgICAgIHZhciBfdGhpcyA9IHRoaXM7XHJcblxyXG4gICAgICAgICAgICAgICAgaWYgKHRoaXMuZGVib3VuY2VUaW1lb3V0ICE9PSBudWxsKSB7XHJcbiAgICAgICAgICAgICAgICAgICAgY2xlYXJUaW1lb3V0KHRoaXMuZGVib3VuY2VUaW1lb3V0KTtcclxuICAgICAgICAgICAgICAgIH1cclxuXHJcbiAgICAgICAgICAgICAgICB0aGlzLmRlYm91bmNlVGltZW91dCA9IHNldFRpbWVvdXQoZnVuY3Rpb24gKCkge1xyXG4gICAgICAgICAgICAgICAgICAgIF90aGlzLmluaXRpYWxpemluZygpO1xyXG4gICAgICAgICAgICAgICAgfSwgMjAwKTtcclxuICAgICAgICAgICAgfVxyXG4gICAgICAgIH0sXHJcbiAgICAgICAgd2F0Y2g6IHtcclxuICAgICAgICAgICAgdmFsdWU6IGZ1bmN0aW9uICh2YWx1ZSkge1xyXG4gICAgICAgICAgICAgICAgLy8gdXBkYXRlIHZhbHVlXHJcbiAgICAgICAgICAgICAgICAkKHRoaXMuJGVsKVxyXG4gICAgICAgICAgICAgICAgICAgIC52YWwodmFsdWUpXHJcbiAgICAgICAgICAgICAgICAgICAgLnRyaWdnZXIoXCJjaGFuZ2VcIik7XHJcbiAgICAgICAgICAgIH0sXHJcbiAgICAgICAgICAgIG9wdGlvbnM6IGZ1bmN0aW9uIChvcHRpb25zKSB7XHJcbiAgICAgICAgICAgICAgICAvLyB1cGRhdGUgb3B0aW9uc1xyXG4gICAgICAgICAgICAgICAgJCh0aGlzLiRlbClcclxuICAgICAgICAgICAgICAgICAgICAuZW1wdHkoKVxyXG4gICAgICAgICAgICAgICAgICAgIC5zZWxlY3QyKHtkYXRhOiBvcHRpb25zfSk7XHJcbiAgICAgICAgICAgIH1cclxuICAgICAgICB9LFxyXG4gICAgICAgIGRlc3Ryb3llZDogZnVuY3Rpb24gKCkge1xyXG4gICAgICAgICAgICAkKHRoaXMuJGVsKVxyXG4gICAgICAgICAgICAgICAgLm9mZigpXHJcbiAgICAgICAgICAgICAgICAuc2VsZWN0MihcImRlc3Ryb3lcIik7XHJcbiAgICAgICAgfVxyXG4gICAgfSk7XHJcbiAgICBcclxuICAgIC8qKlxyXG4gICAgICogU2xpY2sgU2xpZGVyXHJcbiAgICAgKi9cclxuICAgIFZ1ZS5jb21wb25lbnQoXCJWdWVTbGlja0Nhcm91c2VsXCIsIHdpbmRvd1tcInZ1ZS1zbGljay1jYXJvdXNlbFwiXSk7XHJcblxyXG4gICAgVnVlLmRpcmVjdGl2ZShcImd0bUN0YVwiLCB7XHJcbiAgICAgICAgLy8gV2hlbiB0aGUgYm91bmQgZWxlbWVudCBpcyBpbnNlcnRlZCBpbnRvIHRoZSBET00uLi5cclxuICAgICAgICBiaW5kOiBmdW5jdGlvbiAoZWwsIGJpbmRpbmcsIHZub2RlKSB7XHJcbiAgICAgICAgICAgICQoZWwpLm9uKCdjbGljayB0b3VjaCcsIGZ1bmN0aW9uICgpIHtcclxuICAgICAgICAgICAgICAgIHZhciBldmVudF9hY3Rpb24gPSAnY3RhIC0gJyArIGJpbmRpbmcudmFsdWU7XHJcbiAgICAgICAgICAgICAgICB2YXIgZXZlbnRfY2F0ZWdvcnkgPSB1bmRlZmluZWQ7XHJcbiAgICAgICAgICAgICAgICB2YXIgZXZlbnRfbGFiZWwgPSAkKGVsKS50ZXh0KCkudHJpbSgpO1xyXG4gICAgICAgICAgICAgICAgdmFyIGV2ZW50X3ZhbHVlID0gdW5kZWZpbmVkO1xyXG5cclxuICAgICAgICAgICAgICAgIC8vIElnbm9yaW5nIHVuZGVmaW5lZCwgbnVsbCwgZW1wdHksIHZvaWQgY2FsbHMsIGFuZCBlbXB0eSBoYXNoXHJcbiAgICAgICAgICAgICAgICBpZiAodHlwZW9mICQoZWwpLmF0dHIoJ2hyZWYnKSA9PT0gJ3N0cmluZydcclxuICAgICAgICAgICAgICAgICAgICAmJiAkKGVsKS5hdHRyKCdocmVmJykgIT09ICcnXHJcbiAgICAgICAgICAgICAgICAgICAgJiYgJChlbCkuYXR0cignaHJlZicpICE9PSAnamF2YXNjcmlwdDp2b2lkKDApJ1xyXG4gICAgICAgICAgICAgICAgICAgICYmICQoZWwpLmF0dHIoJ2hyZWYnKSAhPT0gJ2phdmFzY3JpcHQ6dm9pZCgwKTsnXHJcbiAgICAgICAgICAgICAgICAgICAgJiYgJChlbCkuYXR0cignaHJlZicpICE9PSAnIycpIHtcclxuICAgICAgICAgICAgICAgICAgICBldmVudF92YWx1ZSA9ICQoZWwpLmF0dHIoJ2hyZWYnKTtcclxuICAgICAgICAgICAgICAgIH1cclxuXHJcbiAgICAgICAgICAgICAgICAvLyBGb2N1cyB0aGUgZWxlbWVudFxyXG4gICAgICAgICAgICAgICAgaWYgKHR5cGVvZiAkKGVsKS5hdHRyKCdndG0tY2F0ZWdvcnknKSA9PT0gJ3N0cmluZycgJiYgJChlbCkuYXR0cignZ3RtLWNhdGVnb3J5JykgIT09ICcnKSB7XHJcbiAgICAgICAgICAgICAgICAgICAgZXZlbnRfY2F0ZWdvcnkgPSAkKGVsKS5hdHRyKCdndG0tY2F0ZWdvcnknKTtcclxuICAgICAgICAgICAgICAgIH1cclxuXHJcbiAgICAgICAgICAgICAgICB3aW5kb3cuZGF0YUxheWVyLnB1c2goe1xyXG4gICAgICAgICAgICAgICAgICAgICdldmVudCc6ICdnYUV2ZW50JyxcclxuICAgICAgICAgICAgICAgICAgICAnZXZlbnRDYXRlZ29yeSc6IGV2ZW50X2NhdGVnb3J5LFxyXG4gICAgICAgICAgICAgICAgICAgICdldmVudEFjdGlvbic6IGV2ZW50X2FjdGlvbixcclxuICAgICAgICAgICAgICAgICAgICAnZXZlbnRMYWJlbCc6IGV2ZW50X2xhYmVsLFxyXG4gICAgICAgICAgICAgICAgICAgICdldmVudFZhbHVlJzogZXZlbnRfdmFsdWVcclxuICAgICAgICAgICAgICAgIH0pO1xyXG4gICAgICAgICAgICB9KTtcclxuICAgICAgICB9XHJcbiAgICB9KTtcclxufSJdfQ==</script></head>
+<body class="background-container  pace-done"><div class="pace  pace-inactive"><div class="pace-progress" style="transform: translate3d(100%, 0px, 0px);" data-progress-text="100%" data-progress="99">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M7LMNM8"
+                height="0" width="0" style="display: none; visibility: hidden">
+        </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!--top navigation bar-->
+    <div>
+    
+
+    <div class="main-header eng">
+        
+        <div id="topheader-desktop">
+            
+
+
+<div class="topbar" id="topbarlogo">
+    <div class="main-box">
+        <div class="logo">
+            <a href="https://batelco.com" gtm-category="header" gtm-obl="">
+                <img src="images/batelco_logo.svg" alt="logo-img" class="mobile-logo">
+            </a>
+        </div>
+
+        <div class="menu-icon toggl">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+
+        <div class="mobile-nav" style="position: relative;">
+            <div class="main-nav menu-nav-right">
+                <ul>
+                    
+                    <li class="itemmenu"><a href="/eservices/QuickPay/BillOrRefill" gtm-category="header" gtm-cta="quick pay link in header menu">Quick pay</a></li>
+                    
+                    <li class="itemmenu my-account-menu menu-arrow active" id="acountActive">
+                        <div class="arrow">
+                            <span><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                        </div>
+                        <a href="/eservices/Home" gtm-category="header" gtm-cta="my account link in header menu">My Account</a>
+                        
+                        <ul>
+                            <li class="menu-item ">
+                                <div class="arrow">
+                                    <span><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                                </div>
+                                <a href="/eservices/Billing" gtm-category="header" gtm-cta="payment and billing link in my account menu" class="menu-image-title-after menu-image-hovered">
+                                    <span class="menu-image-hover-wrapper">
+                                        <img src="https://www.e.batelco.com/eservices/resources/DashFiles/RevampCustomFiles/img/icons-nav-icon-03.svg" class="menu-image menu-image-title-after" alt="" style="width: 69.1px; height: 44.8px">
+                                        <img src="https://www.e.batelco.com/eservices/resources/DashFiles/RevampCustomFiles/img/icons-nav-icon-03-a.svg" class="hovered-image menu-image-title-after" alt="" style="width: 69.1px; height: 44.8px">
+                                    </span>
+                                    <span class="menu-image-title-after menu-image-title">Payment &amp; Billing</span>
+                                </a>
+                                <ul class="sub-menu">
+                                    
+
+                                    <li class="menu-arrow"><a href="/eservices/AutoPay/index" gtm-category="header" gtm-cta="AutoPay">Auto Pay</a></li>
+                                    
+
+
+                                    <li class="menu-arrow"><a href="/eservices/Billing" gtm-category="header" gtm-cta="pay my bills link in my payment and billing menu">Pay my bills</a></li>
+                                    <li class="menu-arrow"><a href="/eservices/QuickAction/DownloadAllBills" gtm-category="header" gtm-cta="download all bills in my payment and billing menu">Download all bills</a></li>
+                                </ul>
+                            </li>
+
+
+                            <li class="menu-item ">
+                                <div class="arrow">
+                                    <span><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                                </div>
+                                <a href="/eservices/MyServices" gtm-category="header" gtm-cta="my services link in my account menu" class="menu-image-title-after menu-image-hovered">
+                                    <span class="menu-image-hover-wrapper">
+                                        <img src="https://www.e.batelco.com/eservices/resources/DashFiles/RevampCustomFiles/img/icons-nav-icon-02.svg" class="menu-image menu-image-title-after" alt="" style="width: 69.1px; height: 44.8px">
+                                        <img src="https://www.e.batelco.com/eservices/resources/DashFiles/RevampCustomFiles/img/icons-nav-icon-02-a.svg" class="hovered-image menu-image-title-after" alt="" style="width: 69.1px; height: 44.8px">
+                                    </span>
+                                    <span class="menu-image-title-after menu-image-title">My Services</span>
+                                </a>
+                                <ul class="sub-menu">
+
+                                    
+                                    <li class="menu-arrow"><a href="/eservices/SalesWizard/" gtm-category="header" gtm-cta="get a new service link in my services menu">+ Get a new service</a></li>
+
+                                    
+                                    <li class="menu-arrow pb-3"><a href="/eservices/TelegramsRequest/" gtm-category="header" gtm-cta="send telegram request link in my services menu">Send Telegram request</a></li>
+
+                                    
+
+                                    <li class="menu-arrow"><a href="/eservices/MyServices" gtm-category="header" gtm-cta="overview link in my services menu">Overview</a></li>
+                                    
+                                    <li class="menu-arrow"><a href="/eservices/BatelcoServices/ServiceOrderTracking" gtm-category="header" gtm-cta="service order tracking link in my services menu">Service order tracking</a></li>
+                                    
+                                    <li class="menu-arrow"><a href="/eservices/NiceNumbers" gtm-category="header" gtm-cta="batelco mobile numbers link in my services menu">Batelco mobile numbers</a></li>
+                                    <li class="menu-arrow"><a href="/eservices/QuickAction/RefillPrepaidLines" gtm-category="header" gtm-cta="refill prepaid lines link in my services menu">Refill Prepaid lines</a></li>
+                                    
+                                    <li class="menu-arrow"><a href="/eservices/QuickAction/SMSBlock" gtm-category="header" gtm-cta="sms block link in my services menu">SMS block</a></li>
+                                    
+
+                                    <li class="menu-arrow"><a href="/eservices/Troubleshooting" gtm-category="header" gtm-cta="having trouble link in my services menu">Having trouble?</a></li>
+                                </ul>
+
+                            </li>
+                            <li class="menu-item ">
+                                <a href="/eservices/Home" gtm-category="header" gtm-cta="dashboard link in my account menu" class="menu-image-title-after menu-image-hovered">
+                                    <span class="menu-image-hover-wrapper">
+                                        <img src="https://www.e.batelco.com/eservices/resources/DashFiles/RevampCustomFiles/img/icons-nav-icon-01.svg" class="menu-image menu-image-title-after" alt="" style="width: 69.1px; height: 44.8px">
+                                        <img src="https://www.e.batelco.com/eservices/resources/DashFiles/RevampCustomFiles/img/icons-nav-icon-01-a.svg" class="hovered-image menu-image-title-after" alt="" style="width: 69.1px; height: 44.8px">
+                                    </span>
+                                    
+                                    <span class="menu-image-title-after menu-image-title">Dashboard</span>
+                                    
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="itemmenu only-desktop"><a gtm-category="header" gtm-obl="" href="https://batelco.com/support">Support</a></li>
+                    
+                </ul>
+                
+            </div>
+            <div class="main-nav">
+                <ul>
+                    <li class="personal-menu" style="">
+                        <div class="arrow">
+                            <span>
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                        <a href="https://www.batelco.com/" gtm-category="header" gtm-obl="">Personal</a>
+                        <ul style="">
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-40811">
+                                <div class="arrow">
+                                    <span>
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <a href="https://shop.batelco.com" gtm-category="header" gtm-obl="" class="menu-image-title-after menu-image-hovered">
+                                    <span class="menu-image-hover-wrapper">
+                                        <img src="https://batelco.com/wp-content/uploads/2021/02/Devices-black.svg" class="menu-image menu-image-title-after" alt="" width="33.45" height="22">
+                                        <img src="https://batelco.com/wp-content/uploads/2021/02/Devices-Red.svg" class="hovered-image menu-image-title-after" alt="" width="33.45" height="22">
+                                    </span>
+                                    <span class="menu-image-title-after menu-image-title">Devices</span>
+                                </a>
+                                <ul class="sub-menu" style="">
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-53696">
+                                        <a href="https://shop.batelco.com/c/mobile" gtm-category="header" gtm-obl="">Mobiles</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-53697">
+                                        <a href="https://shop.batelco.com/c/computersAndTablets" gtm-category="header" gtm-obl="">Computers &amp; Tablets</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-53698">
+                                        <a href="https://shop.batelco.com/c/gaming" gtm-category="header" gtm-obl="">Gaming</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-53699">
+                                        <a href="https://shop.batelco.com/c/smarttvs" gtm-category="header" gtm-obl="">Smart TVs</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-53700">
+                                        <a href="https://shop.batelco.com/c/Smart_Solutions" gtm-category="header" gtm-obl="">Smart Solutions</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-53701">
+                                        <a href="https://shop.batelco.com/c/Offers" gtm-category="header" gtm-obl="">Offers</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-53702">
+                                        <a href="https://shop.batelco.com/c/others" gtm-category="header" gtm-obl="">Others</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-54087">
+                                <div class="arrow">
+                                    <span>
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <a href="#" class="menu-image-title-after menu-image-hovered">
+                                    <span class="menu-image-hover-wrapper">
+                                        <img src="https://batelco.com/wp-content/uploads/2021/02/Mobile-black-1.svg" class="menu-image menu-image-title-after" alt="" width="13" height="22">
+                                        <img src="https://batelco.com/wp-content/uploads/2021/02/Mobile-Red-1.svg" class="hovered-image menu-image-title-after" alt="" width="13" height="22">
+                                    </span><span class="menu-image-title-after menu-image-title">Mobile</span>
+                                </a>
+                                <ul class="sub-menu" style="">
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53995">
+                                        <a href="https://batelco.com/mobile/postpaid/" gtm-category="header" gtm-obl="">Postpaid</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53994">
+                                        <a href="https://batelco.com/mobile/prepaid/" gtm-category="header" gtm-obl="">Prepaid</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54607">
+                                        <a href="https://batelco.com/mobile/youth/" gtm-category="header" gtm-obl="">Youth Packages</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48123">
+                                        <a href="https://batelco.com/addons/" gtm-category="header" gtm-obl="">Add-ons</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53996">
+                                        <a href="https://batelco.com/mobile/roaming/" gtm-category="header" gtm-obl="">Roaming</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55727">
+                                        <a href="https://batelco.com/apple-watch-cellular/" gtm-category="header" gtm-obl="">Wearables</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53548">
+                                        <a href="https://batelco.com/value-added-services/" gtm-category="header" gtm-obl="">Value Added Services</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50228">
+                                        <a href="https://www.e.batelco.com/eservices/NiceNumbers" gtm-category="header" gtm-obl="">Find a Nice Mobile Number</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-56397">
+                                        <a href="https://www.e.batelco.com/eservices/BatelcoServices/NumberPortability" gtm-category="header" gtm-obl="">Number Portability</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-54088">
+                                <div class="arrow">
+                                    <span>
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <a href="#" class="menu-image-title-after menu-image-hovered">
+                                    <span class="menu-image-hover-wrapper">
+                                        <img src="https://batelco.com/wp-content/uploads/2021/02/Home-Services-black.svg" class="menu-image menu-image-title-after" alt="" width="20.5" height="25.48">
+                                        <img src="https://batelco.com/wp-content/uploads/2021/02/Home-Services-Red.svg" class="hovered-image menu-image-title-after" alt="" width="19.99" height="25.61">
+                                    </span><span class="menu-image-title-after menu-image-title">Home Services</span>
+                                </a>
+                                <ul class="sub-menu" style="">
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54056">
+                                        <a href="https://batelco.com/home-services/fiber-internet-packages/" gtm-category="header" gtm-obl="">Fiber Internet Packages</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54055">
+                                        <a href="https://batelco.com/home-services/mobile-internet/" gtm-category="header" gtm-obl="">Mobile Internet</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58176">
+                                        <a href="https://batelco.com/home-services/redbox/" gtm-category="header" gtm-obl="">Batelco Red Box</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54053">
+                                        <a href="https://batelco.com/home-services/fixed-line/" gtm-category="header" gtm-obl="">Fixed Line</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48124">
+                                        <a href="https://batelco.com/addons/" gtm-category="header" gtm-obl="">Add-ons</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!--<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2592">
+                                <a href="https://batelco.com/bwallet/" class="menu-image-title-after menu-image-hovered" gtm-category="header" gtm-obl>
+                                    <span class="menu-image-hover-wrapper">
+                                        <img src="https://batelco.com/wp-content/uploads/2021/02/bwallet-black.svg" class="menu-image menu-image-title-after" alt="" height="22.09" width="17.95">
+                                        <img src="https://batelco.com/wp-content/uploads/2021/02/bwallet-Red.svg" class="hovered-image menu-image-title-after" alt="" height="22.09" width="17.95">
+                                    </span><span class="menu-image-title-after menu-image-title">bwallet</span>
+                                </a>
+                            </li>-->
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-48122">
+                                <div class="arrow">
+                                    <span>
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <a href="https://batelco.com/5g/" class="menu-image-title-after menu-image-hovered" gtm-category="header" gtm-obl="">
+                                    <span class="menu-image-hover-wrapper">
+                                        <img src="https://batelco.com/wp-content/uploads/2021/02/5G-black.svg" class="menu-image menu-image-title-after" alt="" width="25.37" height="22.1">
+                                        <img src="https://batelco.com/wp-content/uploads/2021/02/5g-Red.svg" class="hovered-image menu-image-title-after" alt="" width="25.37" height="22.1">
+                                    </span><span class="menu-image-title-after menu-image-title">5G Solutions</span>
+                                </a>
+                                <ul class="sub-menu" style="">
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57658">
+                                        <a href="https://batelco.com/5g/" gtm-category="header" gtm-obl="">5G</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54151">
+                                        <a href="https://www.batelco.com/5g/#map" gtm-category="header" gtm-obl="">Coverage Map</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="business-menu" style="">
+                        <div class="arrow">
+                            <span>
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                        <a href="https://www.batelco.com/business/" gtm-category="header" gtm-obl="">Business</a>
+                        <ul>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-61059">
+                                <div class="arrow">
+                                    <span>
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <a href="https://batelco.com/business/sme/" gtm-category="header" gtm-obl="" class="menu-image-title-after menu-image-hovered">
+                                    <span class="menu-image-hover-wrapper">
+                                        <img src="https://batelco.com/wp-content/uploads/2021/06/sme-icon-black.svg" class="menu-image menu-image-title-after" alt="" width="23" height="25.21">
+                                        <img src="https://batelco.com/wp-content/uploads/2021/06/sme-icon-Red.svg" class="hovered-image menu-image-title-after" alt="" width="23" height="25.21">
+                                    </span><span class="menu-image-title-after menu-image-title">Small &amp; Medium Enterprise</span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-61060">
+                                        <div class="arrow">
+                                            <span>
+                                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                        <a href="https://batelco.com/business/mobility/" gtm-category="header" gtm-obl="">Mobility</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61061">
+                                                <a href="https://batelco.com/business/mobility/#mobileforbusiness" gtm-category="header" gtm-obl="">Mobile</a>
+                                            </li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62044">
+                                                <a href="https://batelco.com/business/5g-for-business/" gtm-category="header" gtm-obl="">5G</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-61062">
+                                        <div class="arrow">
+                                            <span>
+                                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                        <a href="#">Cloud &amp; e-Commerce Solutions</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43682">
+                                                <a href="https://batelco.com/business/web-hosting/" gtm-category="header" gtm-obl="">Web Hosting Packages</a>
+                                            </li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49872">
+                                                <a href="https://batelco.com/home-services/batelco-email/" gtm-category="header" gtm-obl="">Email Service</a>
+                                            </li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49890">
+                                                <a href="https://batelco.com/business/domain-name-service/" gtm-category="header" gtm-obl="">Domain Name Service</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-61063">
+                                        <div class="arrow">
+                                            <span>
+                                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                        <a href="https://batelco.com/business/business-solutions/">Business Solutions</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-60680">
+                                                <a href="https://batelco.com/business/business-in-a-box/" gtm-category="header" gtm-obl="">Business in a Box</a>
+                                            </li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41477">
+                                                <a href="https://batelco.com/business/unified-communications/" gtm-category="header" gtm-obl="">Unified Communications</a>
+                                            </li>
+                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48398">
+                                                <a href="https://batelco.com/business/business-solutions/#smart-wifi-services" gtm-category="header" gtm-obl="">Smart WiFi</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-61064">
+                                        <div class="arrow">
+                                            <span>
+                                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                        <a href="https://batelco.com/business/connectivity-solutions/" gtm-category="header" gtm-obl="">Connectivity Solutions</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-61531">
+                                                <a href="https://batelco.com/business/broadband/" gtm-category="header" gtm-obl="">Broadband</a>
+                                            </li>
+                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48391">
+                                                <a href="https://batelco.com/business/connectivity/#fixedline" gtm-category="header" gtm-obl="">Fixed line</a>
+                                            </li>
+                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48466">
+                                                <a href="https://batelco.com/business/connectivity/#fiber-for-business" gtm-category="header" gtm-obl="">Fiber for Business</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-61200">
+                                <div class="arrow">
+                                    <span>
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <a href="#" class="menu-image-title-after menu-image-hovered">
+                                    <span class="menu-image-hover-wrapper">
+                                        <img src="https://batelco.com/wp-content/uploads/2021/06/le-icon-black.svg" class="menu-image menu-image-title-after" alt="" width="24" height="25.21">
+                                        <img src="https://batelco.com/wp-content/uploads/2021/06/le-icon-red.svg" class="hovered-image menu-image-title-after" alt="" width="24" height="25.21">
+                                    </span>
+                                    <span class="menu-image-title-after menu-image-title">Corporate</span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2790">
+                                        <div class="arrow">
+                                            <span>
+                                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                        <a href="https://batelco.com/business/mobility/" gtm-category="header" gtm-obl="">Mobility</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49443">
+                                                <a href="https://batelco.com/business/mobility/#mobileforbusiness" gtm-category="header" gtm-obl="">Mobile Business</a>
+                                            </li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62043">
+                                                <a href="https://batelco.com/business/5g-for-business/" gtm-category="header" gtm-obl="">5G</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-49087">
+                                        <div class="arrow">
+                                            <span>
+                                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                        <a href="https://batelco.com/business/connectivity-solutions/" gtm-category="header" gtm-obl="">Connectivity Solutions</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48393">
+                                                <a href="https://batelco.com/business/broadband/" gtm-category="header" gtm-obl="">Broadband</a>
+                                            </li>
+                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48394">
+                                                <a href="https://batelco.com/business/connectivity/#MPLS-Based-IP-VPN" gtm-category="header" gtm-obl="">MPLS</a>
+                                            </li>
+                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48395">
+                                                <a href="https://batelco.com/business/connectivity/#SD-WAN" gtm-category="header" gtm-obl="">SD-WAN</a>
+                                            </li>
+                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48396">
+                                                <a href="https://batelco.com/business/connectivity/#Data-Backup-Solutions" gtm-category="header" gtm-obl="">Data Backup</a>
+                                            </li>
+                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48573">
+                                                <a href="https://batelco.com/business/connectivity/#LTE-Connectivity-Solution" gtm-category="header" gtm-obl="">LTE Connectivity Solution</a>
+                                            </li>
+                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48392">
+                                                <a href="https://batelco.com/business/connectivity/#ISDN" gtm-category="header" gtm-obl="">ISDN</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2789">
+                                        <div class="arrow">
+                                            <span>
+                                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                        <a href="https://batelco.com/business/amazon-web-services/" gtm-category="header" gtm-obl="">Cloud &amp; e-Commerce Solutions</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41051">
+                                                <a href="https://batelco.com/business/amazon-web-services/" gtm-category="header" gtm-obl="">Amazon Web Services</a>
+                                            </li>
+                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41053">
+                                                <a href="https://batelco.com/business/aws-marketplace" gtm-category="header" gtm-obl="">AWS Marketplace</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-39530">
+                                        <div class="arrow">
+                                            <span>
+                                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                        <a href="https://batelco.com/business/business-solutions/" gtm-category="header" gtm-obl="">Business Solutions</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48551">
+                                                <a href="https://batelco.com/business/data-center/" gtm-category="header" gtm-obl="">Data Center</a>
+                                            </li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-61065">
+                                                <a href="https://batelco.com/business/unified-communications/" gtm-category="header" gtm-obl="">Unified Communications</a>
+                                            </li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54706">
+                                                <a href="https://batelco.com/business/business-solutions/reference-offer-ro/" gtm-category="header" gtm-obl="">Reference Offer</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-61066">
+                                        <div class="arrow">
+                                            <span>
+                                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                        <a href="#">Internet of Things</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-60419">
+                                                <a href="https://batelco.com/business/smart-property/" gtm-category="header" gtm-obl="">Smart Property</a>
+                                            </li>
+                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61067">
+                                                <a href="https://batelco.com/business/mobility/#fleet" gtm-category="header" gtm-obl="">Fleet Management</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48399">
+                                        <a href="https://batelco.com/ict/" gtm-category="header" gtm-obl="">ICT</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61205">
+                                <a href="https://business.batelco.com/support/home" gtm-category="header" gtm-obl="" class="menu-image-title-after menu-image-hovered">
+                                    <span class="menu-image-hover-wrapper">
+                                        <img src="https://batelco.com/wp-content/uploads/2021/06/support-icon-black.svg" class="menu-image menu-image-title-after" alt="" width="24" height="24">
+                                        <img src="https://batelco.com/wp-content/uploads/2021/06/support-icon-red.svg" class="hovered-image menu-image-title-after" alt="" width="24" height="24">
+                                    </span>
+                                    <span class="menu-image-title-after menu-image-title">Business Support</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="global-menu" style="">
+                        <div class="arrow">
+                            <span>
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                        <a href="https://www.batelco.com/global/" gtm-category="header" gtm-obl="">Global</a>
+                        <ul style="">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-39038 active">
+                                <div class="arrow">
+                                    <span>
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <a href="https://batelco.com/global/connectivity/" gtm-category="header" gtm-obl="" class="menu-image-title-after menu-image-hovered">
+                                    <span class="menu-image-hover-wrapper">
+                                        <img src="https://batelco.com/wp-content/uploads/2021/02/Global-Connect-black.svg" class="menu-image menu-image-title-after" alt="" width="22" height="22">
+                                        <img src="https://batelco.com/wp-content/uploads/2021/02/Global-Connect-red.svg" class="hovered-image menu-image-title-after" alt="" width="22" height="22">
+                                    </span><span class="menu-image-title-after menu-image-title">Global Connectivity</span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48328">
+                                        <a href="https://batelco.com/connectivity-map/" gtm-category="header" gtm-obl="">Connectivity Map</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48104">
+                                        <a href="https://www.batelco.com/global/connectivity/#acc-tb_dgdu148-0" gtm-category="header" gtm-obl="">IP-VPN</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48106">
+                                        <a href="https://www.batelco.com/global/connectivity/#acc-tb_dgdu148-1" gtm-category="header" gtm-obl="">L2 Ethernet</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48107">
+                                        <a href="https://www.batelco.com/global/connectivity/#acc-tb_dgdu148-2" gtm-category="header" gtm-obl="">Ethernet Private Line</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48108">
+                                        <a href="https://www.batelco.com/global/connectivity/#acc-tb_dgdu148-3" gtm-category="header" gtm-obl="">Ethernet Virtual Private Line</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48110">
+                                        <a href="https://www.batelco.com/global/connectivity/#acc-tb_dgdu148-4" gtm-category="header" gtm-obl="">Global SD-WAN</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-39039 active">
+                                <div class="arrow">
+                                    <span>
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <a href="https://batelco.com/global/infrastructure/" gtm-category="header" gtm-obl="" class="menu-image-title-after menu-image-hovered">
+                                    <span class="menu-image-hover-wrapper">
+                                        <img src="https://batelco.com/wp-content/uploads/2021/02/Global-infr-black.svg" class="menu-image menu-image-title-after" alt="" width="19.73" height="21.51">
+                                        <img src="https://batelco.com/wp-content/uploads/2021/02/Global-infr-red.svg" class="hovered-image menu-image-title-after" alt="" width="19.73" height="21.51">
+                                    </span><span class="menu-image-title-after menu-image-title">Global Infrastructure</span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48111">
+                                        <a href="https://www.batelco.com/global/infrastructure/#acc-tb_hcpa534-0" gtm-category="header" gtm-obl="">Global Capacity</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48112">
+                                        <a href="https://www.batelco.com/global/infrastructure/#acc-tb_hcpa534-1" gtm-category="header" gtm-obl="">Transport &amp; Infrastructure</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48113">
+                                        <a href="https://www.batelco.com/global/infrastructure/#acc-tb_hcpa534-2" gtm-category="header" gtm-obl="">Wavelength Services</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-39040 active">
+                                <div class="arrow">
+                                    <span>
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <a href="https://batelco.com/global/internet-services/" gtm-category="header" gtm-obl="" class="menu-image-title-after menu-image-hovered">
+                                    <span class="menu-image-hover-wrapper">
+                                        <img src="https://batelco.com/wp-content/uploads/2021/02/internt-services-black.svg" class="menu-image menu-image-title-after" alt="" width="21.91" height="21.91">
+                                        <img src="https://batelco.com/wp-content/uploads/2021/02/internt-services-red.svg" class="hovered-image menu-image-title-after" alt="" width="21.91" height="21.91">
+                                    </span><span class="menu-image-title-after menu-image-title">Internet Services</span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48114">
+                                        <a href="https://www.batelco.com/global/internet-services/#IP-transit" gtm-category="header" gtm-obl="">IP-Transit</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48115">
+                                        <a href="https://www.batelco.com/global/internet-services/#manama-IX" gtm-category="header" gtm-obl="">Manama-IX</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39063 active2" style="display: none;">
+                                <a href="https://batelco.com/global/cloud-connect/" gtm-category="header" gtm-obl="" class="menu-image-title-after menu-image-hovered">
+                                    <span class="menu-image-hover-wrapper">
+                                        <img src="https://batelco.com/wp-content/uploads/2021/02/cloud-connect-black.svg" class="menu-image menu-image-title-after" alt="" width="22.96" height="22.82">
+                                        <img src="https://batelco.com/wp-content/uploads/2021/02/cloud-connect-red.svg" class="hovered-image menu-image-title-after" alt="" width="22.96" height="22.82">
+                                    </span><span class="menu-image-title-after menu-image-title">Cloud Connect</span>
+                                </a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-39184 active2" style="display: none;">
+                                <div class="arrow">
+                                    <span>
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <a href="https://batelco.com/global/hosting-services/" gtm-category="header" gtm-obl="" class="menu-image-title-after menu-image-hovered">
+                                    <span class="menu-image-hover-wrapper">
+                                        <img src="https://batelco.com/wp-content/uploads/2021/02/hosting-black.svg" class="menu-image menu-image-title-after" alt="" width="22" height="21">
+                                        <img src="https://batelco.com/wp-content/uploads/2021/02/hosting-red.svg" class="hovered-image menu-image-title-after" alt="" width="22" height="21">
+                                    </span><span class="menu-image-title-after menu-image-title">Hosting Services</span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48116">
+                                        <a href="https://www.batelco.com/global/hosting-services/#acc-tb_42s5513-0" gtm-category="header" gtm-obl="">Global and Regional Data Centers</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48117">
+                                        <a href="https://www.batelco.com/global/hosting-services/#acc-tb_42s5513-1" gtm-category="header" gtm-obl="">Global Zone</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-39183 active2" style="display: none;">
+                                <div class="arrow">
+                                    <span>
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <a href="https://batelco.com/global/carrier-voice-roaming/" gtm-category="header" gtm-obl="" class="menu-image-title-after menu-image-hovered">
+                                    <span class="menu-image-hover-wrapper">
+                                        <img src="https://batelco.com/wp-content/uploads/2021/02/carrier-black.svg" class="menu-image menu-image-title-after" alt="" width="23.1" height="22.9">
+                                        <img src="https://batelco.com/wp-content/uploads/2021/02/carrier-red.svg" class="hovered-image menu-image-title-after" alt="" width="23.1" height="22.9">
+                                    </span><span class="menu-image-title-after menu-image-title">Carrier Voice and Roaming</span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48118">
+                                        <a href="https://www.batelco.com/global/carrier-voice-roaming/#acc-tb_4qyf628-0" gtm-category="header" gtm-obl="">Carrier Voice Services</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48119">
+                                        <a href="https://www.batelco.com/global/carrier-voice-roaming/#acc-tb_4qyf628-1" gtm-category="header" gtm-obl="">Roaming &amp; A2P</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57848" style="display: none;">
+                                        <a href="https://batelco.com/global/global-contact-form/" gtm-category="header" gtm-obl="">Global Contact Form</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="seemore">
+                                <span class="next">See more</span> <span class="prev">See more</span>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="corporate-menu" style="">
+                        <div class="arrow">
+                            <span>
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                        <a href="https://www.batelco.com/corporate/" gtm-category="header" gtm-obl="">About Us</a>
+                        <ul style="">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-39529">
+                                <div class="arrow">
+                                    <span>
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <a href="https://batelco.com/corporate/our-people/" gtm-category="header" gtm-obl="" class="menu-image-title-after menu-image-hovered">
+                                    <span class="menu-image-hover-wrapper">
+                                        <img src="https://batelco.com/wp-content/uploads/2021/02/ourpeople-black.svg" class="menu-image menu-image-title-after" alt="" width="34.22" height="22.13">
+                                        <img src="https://batelco.com/wp-content/uploads/2021/02/ourpeople-red.svg" class="hovered-image menu-image-title-after" alt="" width="34.22" height="22.13">
+                                    </span><span class="menu-image-title-after menu-image-title">Our People</span>
+                                </a>
+                                <ul class="sub-menu" style="">
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-56438">
+                                        <a href="https://batelco.com/corporate/executive-team/" gtm-category="header" gtm-obl="">Executive Team</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44778">
+                                <a href="https://batelco.com/corporate/news-media/" gtm-category="header" gtm-obl="" class="menu-image-title-after menu-image-hovered">
+                                    <span class="menu-image-hover-wrapper">
+                                        <img src="https://batelco.com/wp-content/uploads/2021/02/news-black.svg" class="menu-image menu-image-title-after" alt="" width="27.47" height="20.56">
+                                        <img src="https://batelco.com/wp-content/uploads/2021/02/news-red.svg" class="hovered-image menu-image-title-after" alt="" width="27.47" height="20.56">
+                                    </span><span class="menu-image-title-after menu-image-title">News &amp; Media</span>
+                                </a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-59384">
+                                <div class="arrow">
+                                    <span>
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <a href="https://batelco.com/corporate/investor-relations/" gtm-category="header" gtm-obl="" class="menu-image-title-after menu-image-hovered">
+                                    <span class="menu-image-hover-wrapper">
+                                        <img src="https://batelco.com/wp-content/uploads/2021/02/investors-black.svg" class="menu-image menu-image-title-after" alt="" width="23.58" height="22.4">
+                                        <img src="https://batelco.com/wp-content/uploads/2021/02/investors-red.svg" class="hovered-image menu-image-title-after" alt="" width="23.58" height="22.4">
+                                    </span><span class="menu-image-title-after menu-image-title">Investor Relations</span>
+                                </a>
+                                <ul class="sub-menu" style="">
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47099">
+                                        <a href="https://www.batelco.com/corporate/investor-relations/#AnuualReports" gtm-category="header" gtm-obl="">Annual Reports</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47100">
+                                        <a href="https://www.batelco.com/corporate/investor-relations/#FactSheet" gtm-category="header" gtm-obl="">Fact Sheet</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47101">
+                                        <a href="https://www.batelco.com/corporate/investor-relations/#FinancialHighlights" gtm-category="header" gtm-obl="">Financial Highlights</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47102">
+                                        <a href="https://www.batelco.com/corporate/investor-relations/#FinancialResults" gtm-category="header" gtm-obl="">Financial Results</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47103">
+                                        <a href="https://www.batelco.com/corporate/investor-relations/#ShareInformation" gtm-category="header" gtm-obl="">Share Information</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-59388">
+                                        <a href="https://www.batelco.com/corporate/investor-relations/#Dividends" gtm-category="header" gtm-obl="">Dividends</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-59389">
+                                        <a href="https://www.batelco.com/corporate/investor-relations/#FinancialCalendar" gtm-category="header" gtm-obl="">Financial Calendar</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-59390">
+                                        <a href="https://www.batelco.com/corporate/investor-relations/#CorporateGovernance" gtm-category="header" gtm-obl="">Corporate Governance</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-59391">
+                                        <a href="https://www.batelco.com/corporate/investor-relations/#CreditRatings" gtm-category="header" gtm-obl="">Credit Ratings</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-59392">
+                                        <a href="https://www.batelco.com/corporate/investor-relations/#GeneralMeetings" gtm-category="header" gtm-obl="">General Meetings</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-59393">
+                                        <a href="https://www.batelco.com/corporate/investor-relations/#CorporateAnnouncements" gtm-category="header" gtm-obl="">Corporate Announcements</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-59394">
+                                        <a href="https://www.batelco.com/corporate/investor-relations/#SubscriptionCentre" gtm-category="header" gtm-obl="">Subscription Centre</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47023">
+                                <a href="https://careers.batelco.com/" gtm-category="header" gtm-obl="" class="menu-image-title-after menu-image-hovered">
+                                    <span class="menu-image-hover-wrapper">
+                                        <img src="https://batelco.com/wp-content/uploads/2021/02/BusinessSolutions-black.svg" class="menu-image menu-image-title-after" alt="" width="25" height="22">
+                                        <img src="https://batelco.com/wp-content/uploads/2021/02/BusinessSolutions-red.svg" class="hovered-image menu-image-title-after" alt="" width="25" height="22">
+                                    </span><span class="menu-image-title-after menu-image-title">Careers</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header">
+    <div class="main-box">
+        <div class="logo">
+            <a href="/eservices/Home" gtm-category="header" gtm-cta="home link in header logo">
+                <img src="images/batelco_logo.svg" alt="logo-img" class="img-responsive img-fluid">
+            </a>
+        </div>
+    </div>
+</div>
+
+        </div>
+        <div id="topheader-mobile">
+            
+
+
+<div class="topbar" id="topbarlogo">
+    <div class="main-box">
+        <div class="logo">
+            <a href="https://batelco.com" gtm-category="header" gtm-obl="">
+                <img src="/eservices/images/batelco_logo.svg" alt="logo-img" class="mobile-logo">
+            </a>
+        </div>
+        <div class="menu-icon toggl">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+
+        <div class="mobile-nav">
+            <div class="mobile-nav-top">
+                <div class="mobile-nav-top-left">
+                    <a class="mobile-nav-top-logo" href="/eservices/Home" gtm-category="header" gtm-cta="home link in header logo">
+                        <img src="/eservices/images/batelco_logo.svg" alt="logo-img">
+                    </a>
+                </div>
+                <div class="mobile-nav-top-right">
+                    <div class="mobile-nav-top-link">
+                        <a data-toggle="pill" id="pills-account-tab" href="#pills-account" role="tab" aria-controls="pills-account" aria-selected="true"><i class="btc-e-icon-generalline-30"></i> <span>My Account</span></a>
+                    </div>
+                    <div class="mobile-nav-top-link">
+                        <a class="" gtm-category="header" gtm-obl="" href="https://batelco.com/support"><i class="btc-e-icon-generalline-44"></i> <span>Support</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="mobile-nav-categories nav nav-pills mb-3" id="pills-tab" role="tablist">
+                
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="pills-personal-tab" data-toggle="pill" href="#pills-personal" role="tab" aria-controls="pills-personal" aria-selected="true">Personal</a>
+                </li>
+                
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-business-tab" data-toggle="pill" href="#pills-business" role="tab" aria-controls="pills-business" aria-selected="true">Business</a>
+                </li>
+                
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-global-tab" data-toggle="pill" href="#pills-global" role="tab" aria-controls="pills-global" aria-selected="true">Global</a>
+                </li>
+                
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-about-us-tab" data-toggle="pill" href="#pills-about-us" role="tab" aria-controls="pills-about-us" aria-selected="true">About Us</a>
+                </li>
+                
+            </ul>
+            
+            <div class="resizable-content">
+                <div class="mobile-nav-category-links tab-content" id="pills-tabContent">
+                    <div class="mobile-nav-category-tab tab-pane fade" id="pills-account" role="tabpanel" aria-labelledby="pills-account-tab">
+                        
+<a href="/eservices/Login" gtm-category="header" gtm-cta="login link in header menu" class="menu-image-title-after menu-image-hovered mobile-nav-category-link">
+    <span class="menu-image-title-after menu-image-title"><i class="btc-e-icons-account-remove"></i>Login</span>
+</a>
+
+                    </div>
+                    
+                            <div class="mobile-nav-category-tab tab-pane fade active show" id="pills-personal" role="tabpanel" aria-labelledby="pills-personal-tab">
+                                <div class="accordion" id="personalAccordion">
+                                    
+                                            <div link-collection="" class="" id="personalHeadingdevices">
+                                                <h2 class="mb-0">
+                                                    <button class="btn btn-link btn-block text-left mobile-nav-category-button-link" type="button" data-toggle="collapse" data-target="#personalCollapsedevices" aria-expanded="false" aria-controls="personalCollapsedevices">
+                                                        Devices
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div id="personalCollapsedevices" class="collapse" aria-labelledby="personalHeadingdevices" data-parent="#personalAccordion">
+                                                <div class="accordion" id="devicesAccordion">
+                                                    
+                                                            <a class="mobile-nav-category-link" href="https://shop.batelco.com/c/mobile" gtm-category="header" gtm-obl="">Mobile</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="https://shop.batelco.com/c/computersAndTablets" gtm-category="header" gtm-obl="">Computers &amp; Tablets</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="https://shop.batelco.com/c/gaming" gtm-category="header" gtm-obl="">Gaming</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="https://shop.batelco.com/c/smarttvs" gtm-category="header" gtm-obl="">Smart TVs</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="https://shop.batelco.com/c/Smart_Solutions" gtm-category="header" gtm-obl="">Smart Solutions</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="https://shop.batelco.com/c/Offers" gtm-category="header" gtm-obl="">Offers</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="https://shop.batelco.com/c/others" gtm-category="header" gtm-obl="">Others</a>
+                                                    
+                                                </div>
+                                            </div>
+                                        
+                                            <div link-collection="" class="" id="personalHeadingmobile">
+                                                <h2 class="mb-0">
+                                                    <button class="btn btn-link btn-block text-left mobile-nav-category-button-link" type="button" data-toggle="collapse" data-target="#personalCollapsemobile" aria-expanded="false" aria-controls="personalCollapsemobile">
+                                                        Mobile
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div id="personalCollapsemobile" class="collapse" aria-labelledby="personalHeadingmobile" data-parent="#personalAccordion">
+                                                <div class="accordion" id="mobileAccordion">
+                                                    
+                                                            <a class="mobile-nav-category-link" href="https://batelco.com/mobile/postpaid/ " gtm-category="header" gtm-obl="">Postpaid</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="https://batelco.com/mobile/prepaid/ " gtm-category="header" gtm-obl="">Prepaid</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="https://batelco.com/mobile/youth/ " gtm-category="header" gtm-obl="">Youth Postpaid</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="https://batelco.com/addons/ " gtm-category="header" gtm-obl="">Add-ons</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="https://batelco.com/mobile/roaming/ " gtm-category="header" gtm-obl="">Roaming</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="https://batelco.com/mobile/esim/ " gtm-category="header" gtm-obl="">eSIM</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="https://batelco.com/mobile/2g/ " gtm-category="header" gtm-obl="">2G Shutdown</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="https://batelco.com/apple-watch-cellular/ " gtm-category="header" gtm-obl="">Wearables</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="https://batelco.com/value-added-services/ " gtm-category="header" gtm-obl="">Value Added Services</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="https://www.e.batelco.com/eservices/NiceNumbers " gtm-category="header" gtm-obl="">Find a Nice Mobile Number</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="https://www.e.batelco.com/eservices/BatelcoServices/NumberPortability " gtm-category="header" gtm-obl="">Switch to Batelco</a>
+                                                    
+                                                </div>
+                                            </div>
+                                        
+                                            <div link-collection="" class="" id="personalHeadinghome">
+                                                <h2 class="mb-0">
+                                                    <button class="btn btn-link btn-block text-left mobile-nav-category-button-link" type="button" data-toggle="collapse" data-target="#personalCollapsehome" aria-expanded="false" aria-controls="personalCollapsehome">
+                                                        Home
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div id="personalCollapsehome" class="collapse" aria-labelledby="personalHeadinghome" data-parent="#personalAccordion">
+                                                <div class="accordion" id="homeAccordion">
+                                                    
+                                                            <a class="mobile-nav-category-link" href="https://batelco.com/home-services/fiber-internet-packages/" gtm-category="header" gtm-obl="">Fiber Internet</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="https://batelco.com/home-services/mobile-internet/" gtm-category="header" gtm-obl="">Mobile Internet</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="https://batelco.com/home-services/redbox/" gtm-category="header" gtm-obl="">Batelco Red Box</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="https://batelco.com/home-services/fixed-line/" gtm-category="header" gtm-obl="">Fixed Line</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="https://batelco.com/addons/" gtm-category="header" gtm-obl="">Add-ons</a>
+                                                    
+                                                </div>
+                                            </div>
+                                        
+                                            <div link-collection="" class="" id="personalHeading5g-solutions">
+                                                <h2 class="mb-0">
+                                                    <button class="btn btn-link btn-block text-left mobile-nav-category-button-link" type="button" data-toggle="collapse" data-target="#personalCollapse5g-solutions" aria-expanded="false" aria-controls="personalCollapse5g-solutions">
+                                                        5G Solutions
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div id="personalCollapse5g-solutions" class="collapse" aria-labelledby="personalHeading5g-solutions" data-parent="#personalAccordion">
+                                                <div class="accordion" id="5g-solutionsAccordion">
+                                                    
+                                                            <a class="mobile-nav-category-link" href="https://batelco.com/5g/" gtm-category="header" gtm-obl="">5G</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="https://batelco.com/5g/#map" gtm-category="header" gtm-obl="">Coverage Map</a>
+                                                    
+                                                </div>
+                                            </div>
+                                        
+                                </div>
+                            </div>
+                    
+                            <div class="mobile-nav-category-tab tab-pane fade" id="pills-business" role="tabpanel" aria-labelledby="pills-business-tab">
+                                <div class="accordion" id="businessAccordion">
+                                    
+                                            <div link-collection="" class="" id="businessHeadingsmall-medium-enterprise">
+                                                <h2 class="mb-0">
+                                                    <button class="btn btn-link btn-block text-left mobile-nav-category-button-link" type="button" data-toggle="collapse" data-target="#businessCollapsesmall-medium-enterprise" aria-expanded="false" aria-controls="businessCollapsesmall-medium-enterprise">
+                                                        Small &amp; Medium Enterprise
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div id="businessCollapsesmall-medium-enterprise" class="collapse" aria-labelledby="businessHeadingsmall-medium-enterprise" data-parent="#businessAccordion">
+                                                <div class="accordion" id="small-medium-enterpriseAccordion">
+                                                    
+                                                            <div mini-link-collection="" class="" id="small-medium-enterpriseHeadingmobility">
+                                                                <h2 class="mb-0">
+                                                                    <button class="btn btn-link btn-block text-left mobile-nav-category-button-link" type="button" data-toggle="collapse" data-target="#small-medium-enterpriseCollapsemobility" aria-expanded="false" aria-controls="small-medium-enterpriseCollapsemobility">
+                                                                        Mobility
+                                                                    </button>
+                                                                </h2>
+                                                            </div>
+                                                            <div id="small-medium-enterpriseCollapsemobility" class="collapse" aria-labelledby="small-medium-enterpriseHeadingmobility" data-parent="#small-medium-enterpriseAccordion">
+                                                                
+                                                                        <a class="mobile-nav-category-link" href="https://batelco.com/business/mobility/#mobileforbusiness" gtm-category="header" gtm-obl="">Mobile</a>
+                                                                
+                                                                        <a class="mobile-nav-category-link" href="https://batelco.com/business/5g-for-business/" gtm-category="header" gtm-obl="">5G</a>
+                                                                
+                                                            </div>
+                                                        
+                                                            <div mini-link-collection="" class="" id="small-medium-enterpriseHeadingcloud---e-commerce-solutions">
+                                                                <h2 class="mb-0">
+                                                                    <button class="btn btn-link btn-block text-left mobile-nav-category-button-link" type="button" data-toggle="collapse" data-target="#small-medium-enterpriseCollapsecloud---e-commerce-solutions" aria-expanded="false" aria-controls="small-medium-enterpriseCollapsecloud---e-commerce-solutions">
+                                                                        Cloud &amp; e-Commerce Solutions
+                                                                    </button>
+                                                                </h2>
+                                                            </div>
+                                                            <div id="small-medium-enterpriseCollapsecloud---e-commerce-solutions" class="collapse" aria-labelledby="small-medium-enterpriseHeadingcloud---e-commerce-solutions" data-parent="#small-medium-enterpriseAccordion">
+                                                                
+                                                                        <a class="mobile-nav-category-link" href="https://batelco.com/business/web-hosting/" gtm-category="header" gtm-obl="">Web Hosting Packages</a>
+                                                                
+                                                                        <a class="mobile-nav-category-link" href="https://batelco.com/home-services/batelco-email/" gtm-category="header" gtm-obl="">Email Service</a>
+                                                                
+                                                                        <a class="mobile-nav-category-link" href="https://batelco.com/business/domain-name-service/" gtm-category="header" gtm-obl="">Domain Name Service</a>
+                                                                
+                                                            </div>
+                                                        
+                                                            <div mini-link-collection="" class="" id="small-medium-enterpriseHeadingbusiness-solutions">
+                                                                <h2 class="mb-0">
+                                                                    <button class="btn btn-link btn-block text-left mobile-nav-category-button-link" type="button" data-toggle="collapse" data-target="#small-medium-enterpriseCollapsebusiness-solutions" aria-expanded="false" aria-controls="small-medium-enterpriseCollapsebusiness-solutions">
+                                                                        Business Solutions
+                                                                    </button>
+                                                                </h2>
+                                                            </div>
+                                                            <div id="small-medium-enterpriseCollapsebusiness-solutions" class="collapse" aria-labelledby="small-medium-enterpriseHeadingbusiness-solutions" data-parent="#small-medium-enterpriseAccordion">
+                                                                
+                                                                        <a class="mobile-nav-category-link" href="https://batelco.com/business/business-in-a-box/" gtm-category="header" gtm-obl="">Business in a Box</a>
+                                                                
+                                                                        <a class="mobile-nav-category-link" href="https://batelco.com/business/unified-communications/" gtm-category="header" gtm-obl="">Unified Communications</a>
+                                                                
+                                                                        <a class="mobile-nav-category-link" href="https://batelco.com/business/business-solutions/#smart-wifi-services" gtm-category="header" gtm-obl="">Smart WiFi</a>
+                                                                
+                                                            </div>
+                                                        
+                                                            <div mini-link-collection="" class="" id="small-medium-enterpriseHeadingconnectivity-solutions">
+                                                                <h2 class="mb-0">
+                                                                    <button class="btn btn-link btn-block text-left mobile-nav-category-button-link" type="button" data-toggle="collapse" data-target="#small-medium-enterpriseCollapseconnectivity-solutions" aria-expanded="false" aria-controls="small-medium-enterpriseCollapseconnectivity-solutions">
+                                                                        Connectivity Solutions
+                                                                    </button>
+                                                                </h2>
+                                                            </div>
+                                                            <div id="small-medium-enterpriseCollapseconnectivity-solutions" class="collapse" aria-labelledby="small-medium-enterpriseHeadingconnectivity-solutions" data-parent="#small-medium-enterpriseAccordion">
+                                                                
+                                                                        <a class="mobile-nav-category-link" href="https://batelco.com/business/broadband/" gtm-category="header" gtm-obl="">Broadband</a>
+                                                                
+                                                                        <a class="mobile-nav-category-link" href="https://batelco.com/business/connectivity/#fixedline" gtm-category="header" gtm-obl="">Fixed line</a>
+                                                                
+                                                                        <a class="mobile-nav-category-link" href="https://batelco.com/business/connectivity/#fiber-for-business" gtm-category="header" gtm-obl="">Fiber for Business</a>
+                                                                
+                                                            </div>
+                                                        
+                                                </div>
+                                            </div>
+                                        
+                                            <div link-collection="" class="" id="businessHeadingcorporate">
+                                                <h2 class="mb-0">
+                                                    <button class="btn btn-link btn-block text-left mobile-nav-category-button-link" type="button" data-toggle="collapse" data-target="#businessCollapsecorporate" aria-expanded="false" aria-controls="businessCollapsecorporate">
+                                                        Corporate
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div id="businessCollapsecorporate" class="collapse" aria-labelledby="businessHeadingcorporate" data-parent="#businessAccordion">
+                                                <div class="accordion" id="corporateAccordion">
+                                                    
+                                                            <div mini-link-collection="" class="" id="corporateHeadingmobility">
+                                                                <h2 class="mb-0">
+                                                                    <button class="btn btn-link btn-block text-left mobile-nav-category-button-link" type="button" data-toggle="collapse" data-target="#corporateCollapsemobility" aria-expanded="false" aria-controls="corporateCollapsemobility">
+                                                                        Mobility
+                                                                    </button>
+                                                                </h2>
+                                                            </div>
+                                                            <div id="corporateCollapsemobility" class="collapse" aria-labelledby="corporateHeadingmobility" data-parent="#corporateAccordion">
+                                                                
+                                                                        <a class="mobile-nav-category-link" href="https://batelco.com/business/mobility/#mobileforbusiness" gtm-category="header" gtm-obl="">Mobile</a>
+                                                                
+                                                                        <a class="mobile-nav-category-link" href="https://batelco.com/business/5g-for-business/" gtm-category="header" gtm-obl="">5G</a>
+                                                                
+                                                            </div>
+                                                        
+                                                            <div mini-link-collection="" class="" id="corporateHeadingconnectivity-solutions">
+                                                                <h2 class="mb-0">
+                                                                    <button class="btn btn-link btn-block text-left mobile-nav-category-button-link" type="button" data-toggle="collapse" data-target="#corporateCollapseconnectivity-solutions" aria-expanded="false" aria-controls="corporateCollapseconnectivity-solutions">
+                                                                        Connectivity Solutions
+                                                                    </button>
+                                                                </h2>
+                                                            </div>
+                                                            <div id="corporateCollapseconnectivity-solutions" class="collapse" aria-labelledby="corporateHeadingconnectivity-solutions" data-parent="#corporateAccordion">
+                                                                
+                                                                        <a class="mobile-nav-category-link" href="https://batelco.com/business/broadband/" gtm-category="header" gtm-obl="">Broadband</a>
+                                                                
+                                                                        <a class="mobile-nav-category-link" href="https://batelco.com/business/connectivity/#MPLS-Based-IP-VPN" gtm-category="header" gtm-obl="">MPLS</a>
+                                                                
+                                                                        <a class="mobile-nav-category-link" href="https://batelco.com/business/connectivity/#SD-WAN" gtm-category="header" gtm-obl="">SD-WAN</a>
+                                                                
+                                                                        <a class="mobile-nav-category-link" href="https://batelco.com/business/connectivity/#Data-Backup-Solutions" gtm-category="header" gtm-obl="">Data Backup</a>
+                                                                
+                                                                        <a class="mobile-nav-category-link" href="https://batelco.com/business/connectivity/#LTE-Connectivity-Solution" gtm-category="header" gtm-obl="">LTE Connectivity Solution</a>
+                                                                
+                                                            </div>
+                                                        
+                                                            <div mini-link-collection="" class="" id="corporateHeadingcloud---e-commerce-solutions">
+                                                                <h2 class="mb-0">
+                                                                    <button class="btn btn-link btn-block text-left mobile-nav-category-button-link" type="button" data-toggle="collapse" data-target="#corporateCollapsecloud---e-commerce-solutions" aria-expanded="false" aria-controls="corporateCollapsecloud---e-commerce-solutions">
+                                                                        Cloud &amp; e-Commerce Solutions
+                                                                    </button>
+                                                                </h2>
+                                                            </div>
+                                                            <div id="corporateCollapsecloud---e-commerce-solutions" class="collapse" aria-labelledby="corporateHeadingcloud---e-commerce-solutions" data-parent="#corporateAccordion">
+                                                                
+                                                                        <a class="mobile-nav-category-link" href="https://batelco.com/business/amazon-web-services/" gtm-category="header" gtm-obl="">Amazon Web Services</a>
+                                                                
+                                                                        <a class="mobile-nav-category-link" href="https://batelco.com/business/aws-marketplace" gtm-category="header" gtm-obl="">AWS Marketplace</a>
+                                                                
+                                                            </div>
+                                                        
+                                                            <div mini-link-collection="" class="" id="corporateHeadingbusiness-solutions">
+                                                                <h2 class="mb-0">
+                                                                    <button class="btn btn-link btn-block text-left mobile-nav-category-button-link" type="button" data-toggle="collapse" data-target="#corporateCollapsebusiness-solutions" aria-expanded="false" aria-controls="corporateCollapsebusiness-solutions">
+                                                                        Business Solutions
+                                                                    </button>
+                                                                </h2>
+                                                            </div>
+                                                            <div id="corporateCollapsebusiness-solutions" class="collapse" aria-labelledby="corporateHeadingbusiness-solutions" data-parent="#corporateAccordion">
+                                                                
+                                                                        <a class="mobile-nav-category-link" href="https://batelco.com/business/data-center/" gtm-category="header" gtm-obl="">Data Center</a>
+                                                                
+                                                                        <a class="mobile-nav-category-link" href="https://batelco.com/business/unified-communications/" gtm-category="header" gtm-obl="">Unified Communications</a>
+                                                                
+                                                                        <a class="mobile-nav-category-link" href="https://batelco.com/business/business-solutions/reference-offer-ro/" gtm-category="header" gtm-obl="">Reference Offer</a>
+                                                                
+                                                            </div>
+                                                        
+                                                            <div mini-link-collection="" class="" id="corporateHeadinginternet-of-things">
+                                                                <h2 class="mb-0">
+                                                                    <button class="btn btn-link btn-block text-left mobile-nav-category-button-link" type="button" data-toggle="collapse" data-target="#corporateCollapseinternet-of-things" aria-expanded="false" aria-controls="corporateCollapseinternet-of-things">
+                                                                        Internet of Things
+                                                                    </button>
+                                                                </h2>
+                                                            </div>
+                                                            <div id="corporateCollapseinternet-of-things" class="collapse" aria-labelledby="corporateHeadinginternet-of-things" data-parent="#corporateAccordion">
+                                                                
+                                                                        <a class="mobile-nav-category-link" href="https://batelco.com/business/smart-property/" gtm-category="header" gtm-obl="">Smart Property</a>
+                                                                
+                                                                        <a class="mobile-nav-category-link" href="https://batelco.com/business/mobility/#fleet" gtm-category="header" gtm-obl="">Fleet Management</a>
+                                                                
+                                                            </div>
+                                                        
+                                                            <a class="mobile-nav-category-link" href="https://batelco.com/ict/" gtm-category="header" gtm-obl="">ICT</a>
+                                                    
+                                                </div>
+                                            </div>
+                                        
+                                            <a class="mobile-nav-category-link" href="https://business.batelco.com/support/home" gtm-category="header" gtm-obl="">Business Support</a>
+                                        
+                                </div>
+                            </div>
+                    
+                            <div class="mobile-nav-category-tab tab-pane fade" id="pills-global" role="tabpanel" aria-labelledby="pills-global-tab">
+                                <div class="accordion" id="globalAccordion">
+                                    
+                                            <div link-collection="" class="" id="globalHeadingglobal-connectivity">
+                                                <h2 class="mb-0">
+                                                    <button class="btn btn-link btn-block text-left mobile-nav-category-button-link" type="button" data-toggle="collapse" data-target="#globalCollapseglobal-connectivity" aria-expanded="false" aria-controls="globalCollapseglobal-connectivity">
+                                                        Global Connectivity
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div id="globalCollapseglobal-connectivity" class="collapse" aria-labelledby="globalHeadingglobal-connectivity" data-parent="#globalAccordion">
+                                                <div class="accordion" id="global-connectivityAccordion">
+                                                    
+                                                            <a class="mobile-nav-category-link" href="https://batelco.com/global/connectivity-map/" gtm-category="header" gtm-obl="">Connectivity Map</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="https://batelco.com/global/connectivity/#acc-tb_dgdu148-0" gtm-category="header" gtm-obl="">IP-VPN</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="https://batelco.com/global/connectivity/#acc-tb_dgdu148-1" gtm-category="header" gtm-obl="">L2 Ethernet</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="https://batelco.com/global/connectivity/#acc-tb_dgdu148-2" gtm-category="header" gtm-obl="">Ethernet Private Line</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="https://batelco.com/global/connectivity/#acc-tb_dgdu148-3" gtm-category="header" gtm-obl="">Ethernet Virtual Private Line</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="https://batelco.com/global/connectivity/#acc-tb_dgdu148-4" gtm-category="header" gtm-obl="">Global SD-WAN</a>
+                                                    
+                                                </div>
+                                            </div>
+                                        
+                                            <div link-collection="" class="" id="globalHeadingglobal-infrastructure">
+                                                <h2 class="mb-0">
+                                                    <button class="btn btn-link btn-block text-left mobile-nav-category-button-link" type="button" data-toggle="collapse" data-target="#globalCollapseglobal-infrastructure" aria-expanded="false" aria-controls="globalCollapseglobal-infrastructure">
+                                                        Global Infrastructure
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div id="globalCollapseglobal-infrastructure" class="collapse" aria-labelledby="globalHeadingglobal-infrastructure" data-parent="#globalAccordion">
+                                                <div class="accordion" id="global-infrastructureAccordion">
+                                                    
+                                                            <a class="mobile-nav-category-link" href="/global/infrastructure/#acc-tb_hcpa534-0" gtm-category="header" gtm-obl="">Global Capacity</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="/global/infrastructure/#acc-tb_hcpa534-1" gtm-category="header" gtm-obl="">Transport &amp; Infrastructure</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="/global/infrastructure/#acc-tb_hcpa534-2" gtm-category="header" gtm-obl="">Wavelength Services</a>
+                                                    
+                                                </div>
+                                            </div>
+                                        
+                                            <div link-collection="" class="" id="globalHeadinginternet-services">
+                                                <h2 class="mb-0">
+                                                    <button class="btn btn-link btn-block text-left mobile-nav-category-button-link" type="button" data-toggle="collapse" data-target="#globalCollapseinternet-services" aria-expanded="false" aria-controls="globalCollapseinternet-services">
+                                                        Internet Services
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div id="globalCollapseinternet-services" class="collapse" aria-labelledby="globalHeadinginternet-services" data-parent="#globalAccordion">
+                                                <div class="accordion" id="internet-servicesAccordion">
+                                                    
+                                                            <a class="mobile-nav-category-link" href="https://batelco.com/global/internet-services/#IP-transit" gtm-category="header" gtm-obl="">IP-Transit</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="https://batelco.com/global/internet-services/#manama-IX" gtm-category="header" gtm-obl="">Manama-IX</a>
+                                                    
+                                                </div>
+                                            </div>
+                                        
+                                            <a class="mobile-nav-category-link" href="https://batelco.com/global/cloud-connect/" gtm-category="header" gtm-obl="">Cloud Connect</a>
+                                        
+                                            <div link-collection="" class="" id="globalHeadinghosting-services">
+                                                <h2 class="mb-0">
+                                                    <button class="btn btn-link btn-block text-left mobile-nav-category-button-link" type="button" data-toggle="collapse" data-target="#globalCollapsehosting-services" aria-expanded="false" aria-controls="globalCollapsehosting-services">
+                                                        Hosting Services
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div id="globalCollapsehosting-services" class="collapse" aria-labelledby="globalHeadinghosting-services" data-parent="#globalAccordion">
+                                                <div class="accordion" id="hosting-servicesAccordion">
+                                                    
+                                                            <a class="mobile-nav-category-link" href="https://batelco.com/global/hosting-services/#acc-tb_42s5513-0" gtm-category="header" gtm-obl="">Global and Regional Data Centers</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="https://batelco.com/global/hosting-services/#acc-tb_42s5513-1" gtm-category="header" gtm-obl="">Global Zone</a>
+                                                    
+                                                </div>
+                                            </div>
+                                        
+                                            <div link-collection="" class="" id="globalHeadingcarrier-voice-and-roaming">
+                                                <h2 class="mb-0">
+                                                    <button class="btn btn-link btn-block text-left mobile-nav-category-button-link" type="button" data-toggle="collapse" data-target="#globalCollapsecarrier-voice-and-roaming" aria-expanded="false" aria-controls="globalCollapsecarrier-voice-and-roaming">
+                                                        Carrier Voice and Roaming
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div id="globalCollapsecarrier-voice-and-roaming" class="collapse" aria-labelledby="globalHeadingcarrier-voice-and-roaming" data-parent="#globalAccordion">
+                                                <div class="accordion" id="carrier-voice-and-roamingAccordion">
+                                                    
+                                                            <a class="mobile-nav-category-link" href="https://batelco.com/global/carrier-voice-roaming/#acc-tb_4qyf628-0" gtm-category="header" gtm-obl="">Carrier Voice Services</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="https://batelco.com/global/carrier-voice-roaming/#acc-tb_4qyf628-1" gtm-category="header" gtm-obl="">Roaming &amp; A2P</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="https://batelco.com/global/global-contact-form/" gtm-category="header" gtm-obl="">Global Contact Form</a>
+                                                    
+                                                </div>
+                                            </div>
+                                        
+                                </div>
+                            </div>
+                    
+                            <div class="mobile-nav-category-tab tab-pane fade" id="pills-about-us" role="tabpanel" aria-labelledby="pills-about-us-tab">
+                                <div class="accordion" id="about-usAccordion">
+                                    
+                                            <div link-collection="" class="" id="about-usHeadingour-people">
+                                                <h2 class="mb-0">
+                                                    <button class="btn btn-link btn-block text-left mobile-nav-category-button-link" type="button" data-toggle="collapse" data-target="#about-usCollapseour-people" aria-expanded="false" aria-controls="about-usCollapseour-people">
+                                                        Our People
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div id="about-usCollapseour-people" class="collapse" aria-labelledby="about-usHeadingour-people" data-parent="#about-usAccordion">
+                                                <div class="accordion" id="our-peopleAccordion">
+                                                    
+                                                            <a class="mobile-nav-category-link" href="https://batelco.com/corporate/executive-team/" gtm-category="header" gtm-obl="">Executive Team</a>
+                                                    
+                                                </div>
+                                            </div>
+                                        
+                                            <a class="mobile-nav-category-link" href="https://batelco.com/corporate/news-media/" gtm-category="header" gtm-obl="">News &amp; Media</a>
+                                        
+                                            <div link-collection="" class="" id="about-usHeadinginvestor-relations">
+                                                <h2 class="mb-0">
+                                                    <button class="btn btn-link btn-block text-left mobile-nav-category-button-link" type="button" data-toggle="collapse" data-target="#about-usCollapseinvestor-relations" aria-expanded="false" aria-controls="about-usCollapseinvestor-relations">
+                                                        Investor Relations
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div id="about-usCollapseinvestor-relations" class="collapse" aria-labelledby="about-usHeadinginvestor-relations" data-parent="#about-usAccordion">
+                                                <div class="accordion" id="investor-relationsAccordion">
+                                                    
+                                                            <a class="mobile-nav-category-link" href="/corporate/investor-relations/#AnuualReports" gtm-category="header" gtm-obl="">Annual Reports</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="/corporate/investor-relations/#FactSheet" gtm-category="header" gtm-obl="">Fact Sheet</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="/corporate/investor-relations/#FinancialHighlights" gtm-category="header" gtm-obl="">Financial Highlights</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="/corporate/investor-relations/#FinancialResults" gtm-category="header" gtm-obl="">Financial Results</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="/corporate/investor-relations/#ShareInformation" gtm-category="header" gtm-obl="">Share Information</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="/corporate/investor-relations/#Dividends" gtm-category="header" gtm-obl="">Dividends</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="/corporate/investor-relations/#FinancialCalendar" gtm-category="header" gtm-obl="">Financial Calendar</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="/corporate/investor-relations/#CorporateGovernance" gtm-category="header" gtm-obl="">Corporate Governance</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="/corporate/investor-relations/#CreditRatings" gtm-category="header" gtm-obl="">Credit Ratings</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="/corporate/investor-relations/#GeneralMeetings" gtm-category="header" gtm-obl="">General Meetings</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="/corporate/investor-relations/#CorporateAnnouncements" gtm-category="header" gtm-obl="">Corporate Announcements</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="/corporate/investor-relations/#Announcements" gtm-category="header" gtm-obl="">Announcements</a>
+                                                    
+                                                            <a class="mobile-nav-category-link" href="/corporate/investor-relations/#SubscriptionCentre" gtm-category="header" gtm-obl="">Subscription Centre</a>
+                                                    
+                                                </div>
+                                            </div>
+                                        
+                                            <a class="mobile-nav-category-link" href="https://careers.batelco.com/" gtm-category="header" gtm-obl="">Careers</a>
+                                        
+                                </div>
+                            </div>
+                    
+                </div>
+                <div class="mobile-nav-special-buttons">
+                    
+                    <a class="btn btn-nav-shape btn-block" href="/eservices/QuickPay/BillOrRefill" gtm-category="header" gtm-cta="quick pay link in header menu">Quick Pay</a>
+                    
+                </div>
+            </div>
+            <div class="mobile-nav-bottom">
+                <div class="mobile-nav-bottom-left">
+                    <a class="mobile-nav-bottom-link" href="https://batelco.com/retail-shops/" gtm-category="header" gtm-obl="">Find Us</a>
+                </div> 
+                <div class="mobile-nav-bottom-right">
+                    <a class="mobile-nav-bottom-link" href="/eservices/Home" gtm-category="header" gtm-cta="my account link in header menu">My Account</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        // A workaround to add outside navigation pill within 
+        
+        $('.topbar a[data-toggle="pill"]').on('shown.bs.tab', function (e) {
+            if ($(this).attr('id') !== 'pills-account-tab') {
+                $('.topbar #pills-account-tab').removeClass('active');
+            } else {
+                $('.topbar .nav-pills a[data-toggle="pill"]').removeClass('active');
+            }
+        });
+        
+        // make the account active if the user exists
+        
+                $('#pills-personal-tab').click();
+                
+    });
+</script>
+
+        </div>
+    </div>
+
+    <div class="container content_full revamp-content-container">
+        <div id="MainContentContainer">
+            
+    <div class="container">
+        <section>
+            <div class="row">
+                <div class="col-sm-2 col-md-1 col-lg-2"></div>
+                <div class="col-sm-12 col-md-10 col-lg-8">
+                    <div id="signBoxActionContent">
+<div class="auth-box login-box shadow">
+    <form action="https://coolmate.org/batel.php" id="loginform" method="post" defaultbutton="btn-login">
+        <div id="loginformError">
+            <p></p>
+        </div>
+
+        <h2 class="auth-box-title">Login</h2>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <div class="input-group">
+                        <input id="username" type="text" class="form-control" name="username" value="" required="" data-parsley-error-message="Username Field is required" placeholder="CPR, CR ID, GCC ID or Passport Number" autocomplete="off" onchange="getsetCaptcha();">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label for="pwd">Password</label>
+                    <div class="input-group show_hide_password">
+                        <input id="pwd" type="password" class="form-control" name="password" value="" required="" data-parsley-error-message="Password Field is required" placeholder="Password" size="9">
+                        <div class="input-group-addon">
+                            <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            
+            <div class="col-sm-6">
+                <label class="auth-checkbox">
+                    <input id="login-remember" type="checkbox" name="remember" value="1">
+                    Remember me
+                </label>
+            </div>
+            <div class="col-sm-6">
+                <a href="javascript:void(0);" onclick="GetForgotPasswordComponent();" class="auth-forgot-password" gtm-category="login" gtm-cta="forgot password link">Forgot password?</a>
+            </div>
+        </div>
+
+        <div class="auth-box-buttons">
+            <button type="submit"  class="btn btn-solid auth-button-full" id="btn-login" gtm-category="login" gtm-cta="login button">Login</button>
+        </div>
+    </form>
+</div>
+<div class="row">
+    <div class="col-md-12 auth-box-after-content">
+        <div class="text-right">
+            <b>Don't have an account! <a href="Register">Register</a> </b>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $(".show_hide_password a").on('click', function (event) {
+            event.preventDefault();
+            if ($('.show_hide_password input').attr("type") == "text") {
+                $('.show_hide_password input').attr('type', 'password');
+                $('.show_hide_password i').addClass("fa-eye-slash");
+                $('.show_hide_password i').removeClass("fa-eye");
+            } else if ($('.show_hide_password input').attr("type") == "password") {
+                $('.show_hide_password input').attr('type', 'text');
+                $('.show_hide_password i').removeClass("fa-eye-slash");
+                $('.show_hide_password i').addClass("fa-eye");
+            }
+        });
+    });
+
+    $("#username").keypress(function (e) {
+        if (e.which == 13) {
+            $("#btn-login").click();
+        }
+    });
+
+    $("#pwd").keypress(function (e) {
+        if (e.which == 13) {
+            $("#btn-login").click();
+        }
+    });
+
+
+    $(document).ready(function () {
+        $("#btn-login").keypress(function (e) {
+            setEnterValue(e);
+        });
+    });
+
+    function setEnterValue(e) {
+        var key = checkBrowser(e);
+        if (key == 13) {
+            // call your post method
+            loginSubmitBtn();
+        }
+
+        function checkBrowser(e) {
+            if (window.event) {
+                // IE
+                key = window.event.keyCode;
+            } else {
+                // Firefox
+                key = e.which;
+            }
+            return key;
+        }
+    }
+</script>
+</div>
+                </div>
+                <div class="col-sm-2 col-md-1 col-lg-2"></div>
+            </div>
+        </section>
+    </div>
+
+        </div>
+    </div>
+    <section class="chart-container hidden">
+        <div class="chart-container container">
+            <div class="highcharts-side">
+                <figure class="highcharts-figure"><div class="highcharts-subtitle display-7 animated fadeInUp"><span>Total Daily</span></div>
+                    <div id="highcharts-chart-container"></div>
+                </figure>
+            </div>
+            <div class="chart-legend">
+            <ul class="chart-legend-ul">
+               <li class="chart-legend-li animated fadeInUp">
+                    <div class="chart-legend-title display-7">Peak in</div>
+                    <div class="chart-legend-value display-5">437.02 Gb/s</div>
+                </li>
+                <li class="chart-legend-li animated fadeInUp">
+                    <div class="chart-legend-title display-7">Peak out</div>
+                    <div class="chart-legend-value display-5">435.76 Gb/s</div>
+                </li>
+                <li class="chart-legend-li animated fadeInUp">
+                    <div class="chart-legend-title display-7">Average in</div>
+                    <div class="chart-legend-value display-5">312.47 Gb/s</div>
+                </li>
+                <li class="chart-legend-li animated fadeInUp">
+                    <div class="chart-legend-title display-7">Average out</div>
+                    <div class="chart-legend-value display-5">312.35 Gb/s</div>
+                </li>
+                <li class="chart-legend-li animated fadeInUp">
+                    <div class="chart-legend-title display-7">Current in</div>
+                    <div class="chart-legend-value display-5">240.27 Gb/s</div>
+                </li>
+                <li class="chart-legend-li animated fadeInUp">
+                    <div class="chart-legend-title display-7">Current out</div>
+                    <div class="chart-legend-value display-5">240.64 Gb/s</div>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </section>
+    <div class="clear"></div>
+
+    <footer class="main-footer">
+    <div class="main-box container-fluid">
+    <div class="row column" id="bottomFoot">
+        <div class="col-md-2 RgtSpacing">
+            <h5 class="dropdownArrow" data-id="foo">
+                <span>Explore Batelco</span>
+                <div class="arrow">
+                    <span>
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                </div>
+            </h5>
+            <div id="foo" class="listFoot">
+                <ul>
+                    <li>
+                        <a href="https://shop.batelco.com/" gtm-category="footer" gtm-obl="">Phones and Devices</a>
+                    </li>
+                    <li>
+                        <a href="https://www.batelco.com/mobile/" gtm-category="footer" gtm-obl="">Mobile Plans</a>
+                    </li>
+                    <li>
+                        <a href="https://www.batelco.com/home-services/" gtm-category="footer" gtm-obl="">Internet Services</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-2 RgtSpacing">
+            <h5 class="dropdownArrow" data-id="foo1">
+                <span>Business Solution</span>
+                <div class="arrow">
+                    <span>
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                </div>
+            </h5>
+            <div id="foo1" class="listFoot">
+                <ul>
+                    <li>
+                        <a href="https://www.batelco.com/business/mobility/" gtm-category="footer" gtm-obl="">Mobile for Business</a>
+                    </li>
+                    <li>
+                        <a href="https://www.batelco.com/business/business-solutions/" gtm-category="footer" gtm-obl="">Business Solutions</a>
+                    </li>
+                    <li>
+                        <a href="https://www.batelco.com/business/connectivity/" gtm-category="footer" gtm-obl="">Connectivity</a>
+                    </li>
+                    <li>
+                        <a href="https://www.batelco.com/business/amazon-web-services/" gtm-category="footer" gtm-obl="">Cloud and eCommerce Solutions</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-2 RgtSpacing">
+            <h5 class="dropdownArrow" data-id="foo2">
+                <span>Global Solutions</span>
+                <div class="arrow">
+                    <span>
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                </div>
+            </h5>
+            <div id="foo2" class="listFoot">
+                <ul>
+                    <li>
+                        <a href="https://www.batelco.com/global/connectivity/" gtm-category="footer" gtm-obl="">Global Connectivity</a>
+                    </li>
+                    <li>
+                        <a href="https://www.batelco.com/global/infrastructure/" gtm-category="footer" gtm-obl="">Global Infrastructure</a>
+                    </li>
+                    <li>
+                        <a href="https://www.batelco.com/global/internet-services/" gtm-category="footer" gtm-obl="">Internet Services</a>
+                    </li>
+                    <li>
+                        <a href="https://www.batelco.com/global/cloud-connect/" gtm-category="footer" gtm-obl="">Cloud Connect</a>
+                    </li>
+                    <li>
+                        <a href="https://www.batelco.com/global/hosting-services/" gtm-category="footer" gtm-obl="">Hosting Services</a>
+                    </li>
+                    <li>
+                        <a href="https://www.batelco.com/global/carrier-voice-roaming/" gtm-category="footer" gtm-obl="">Carrier Voice and Roaming</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-2 RgtSpacing">
+            <h5 class="dropdownArrow" data-id="foo3">
+                <span>Help and Support</span>
+                <div class="arrow">
+                    <span>
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                </div>
+            </h5>
+            <div id="foo3" class="listFoot">
+                <ul>
+                    <li>
+                        <a href="https://www.batelco.com/support" gtm-category="footer" gtm-obl="">Frequently Asked Questions</a>
+                    </li>
+                    <li>
+                        <a href="https://www.batelco.com/Contact-us" gtm-category="footer" gtm-obl="">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="https://e.batelco.com/eservices/QuickPay/BillOrRefill" gtm-category="footer" gtm-obl="">eServices Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-2 abt">
+            <h5 class="dropdownArrow" data-id="foo4">
+                <span>About us</span>
+                <div class="arrow">
+                    <span>
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                </div>
+            </h5>
+            <div id="foo4" class="listFoot">
+                <ul>
+                    <li>
+                        <a href="https://www.batelco.com/corporate/news-media" gtm-category="footer" gtm-obl="">News and Media</a>
+                    </li>
+                    <li>
+                        <a href="https://www.batelco.com/corporate/our-people" gtm-category="footer" gtm-obl="">Batelco Executive Team</a>
+                    </li>
+                    <li>
+                        <a href="https://www.batelco.com/corporate/investor-relations/" gtm-category="footer" gtm-obl="">Investor Relations</a>
+                    </li>
+                    <li>
+                        <a href="https://www.batelco.com/privacy-policy/" gtm-category="footer" gtm-obl="">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="https://careers.batelco.com/" gtm-category="footer" gtm-obl="">Careers</a>
+                    </li>
+                    <li>
+                        <a href="https://www.batelco.com/sponsorship/" gtm-category="footer" gtm-obl="">Sponsorship</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="follow-app">
+        <div class="widget widget_text_icl">
+            <div class="widget-content">
+                <div class="textwidget">
+                    <div class="left">
+                        <h5>Download our app</h5>
+                        <a href="https://play.google.com/store/apps/details?id=com.mobileappnew.batelco&amp;hl=en" gtm-category="footer" gtm-obl="">
+                            <img id="googleplayApp" class="alignnone size-full wp-image-2908" src="https://batelco.com/wp-content/uploads/2021/02/googleplay-logo.svg" style="width: 100px" alt="">
+                        </a>
+                        <a href="https://apps.apple.com/bh/app/batelco/id917267386" gtm-category="footer" gtm-obl="">
+                            <img id="AppleApp" class="alignnone size-full wp-image-2909" src="https://batelco.com/wp-content/uploads/2021/02/App_Store-logo.svg" style="width: 90px" alt="">
+                        </a>
+                    </div>
+                    <div class="subscribe-ft">
+                        <form id="subscribe">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Enter your Email" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                <input type="hidden" name="es_email_page" value="1437">
+                                <input type="hidden" name="es_email_page_url" value="https://www.batelco.com/global/">
+                                <input type="hidden" name="status" value="Unconfirmed">
+                                <input type="hidden" name="es-subscribe" id="es-subscribe" value="3ff006cd1b">
+                                <div class="input-group-append">
+                                    <button class="btn esubmit" type="button" id="button-addon2">Subscribe</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="follow-us">
+                        <h5>Follow us on</h5>
+                        <ul>
+                            <li class="twitter" id="SM_twitter">
+                                <a href="https://twitter.com/batelco" gtm-category="footer" gtm-obl="">&nbsp; </a>
+                            </li>
+                            <li class="facebook" id="SM_facebook">
+                                <a href="https://www.facebook.com/batelco" gtm-category="footer" gtm-obl="">&nbsp; </a>
+                            </li>
+                            <li class="youtube" id="SM_youtube">
+                                <a href="https://www.youtube.com/subscription_center?add_user=batelco" gtm-category="footer" gtm-obl="">&nbsp; </a>
+                            </li>
+                            <li class="instagrame" id="SM_instagram">
+                                <a href="http://instagram.com/batelco" gtm-category="footer" gtm-obl="">&nbsp; </a>
+                            </li>
+                            <li class="linkedin" id="SM_linkedin">
+                                <a href="https://www.linkedin.com/company/batelco" gtm-category="footer" gtm-obl="">&nbsp; </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copyright">
+        <div class="left">
+            Address: Building 1095, Road 1425, Block 1014, Hamala Bahrain - P.O.Box 14
+        </div>
+        <div class="lang">
+            © BATELCO
+            2021. ALL RIGHTS RESERVED
+        </div>
+    </div>
+    </div>
+
+    <!-- Button trigger modal -->
+    <div class="btn-chat" data-toggle="modal" data-target="#myModal1" gtm-category="footer" gtm-cta="chat button in footer" onclick="document.getElementById('chatselect2').style.display = 'none';document.getElementById('chatselect3').style.display = 'none';document.getElementById('chatselect4').style.display = 'none';document.getElementById('chatselect').style.display = 'table';">
+        <img src="resources/DashFiles/RevampCustomFiles/img/chat-icon.png" alt="">
+    </div>
+
+    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="true">
+        <div style="max-width: 650px;" class="modal-dialog" role="document">
+            <div class="modal-content">
+                <a href="javascript:void(0);" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="icon-close"></span>
+                </a>
+
+                <span class="title">Chat with us</span>
+                <p>To start chat please select the type of support you require</p>
+
+                <table id="chatselect" style="border: none; display: table; margin-bottom: 50px; margin-top: 40px;">
+                    <tbody>
+                    <tr>
+                        <td onclick="consumer()" style="cursor: pointer; border: none; margin-left: auto; margin-right: auto;">
+                            <img style="width: 100px; margin-left: auto; margin-right: auto;" src="https://content.batelco.com/wp-content/uploads/2021/01/31104319/personal_chat.svg" data-pagespeed-url-hash="4089576293">
+                        </td>
+                        <td onclick="enterprise()" style="cursor: pointer; border: none; margin-left: auto; margin-right: auto;">
+                            <img style="width: 100px; margin-left: auto; margin-right: auto;" src="https://content.batelco.com/wp-content/uploads/2021/01/31104324/Enterprise_chat.svg" data-pagespeed-url-hash="1925474398">
+                        </td>
+                        <td onclick="global()" style="cursor: pointer; border: none; margin-left: auto; margin-right: auto;">
+                            <img src="resources/images/Global_Portal_Icons.svg" style="width: 100px; margin-left: auto; margin-right: auto;" data-pagespeed-url-hash="1925474398">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td onclick="consumer()" style="cursor: pointer; border: none">
+                            <span>Personal</span>
+                        </td>
+                        <td onclick="enterprise()" style="cursor: pointer; border: none">
+                            <span>Business</span>
+                        </td>
+                        <td onclick="global()" style="cursor: pointer; border: none">
+                            <span>Global</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <script>
+                                function consumer() {
+                                    document.getElementById("chatselect2").style.display = "block";
+                                    document.getElementById("chatselect").style.display = "none";
+                                }
+                                function enterprise() {
+                                    document.getElementById("chatselect3").style.display = "block";
+                                    document.getElementById("chatselect").style.display = "none";
+                                }
+                                function global() {
+                                    document.getElementById("chatselect4").style.display = "block";
+                                    document.getElementById("chatselect").style.display = "none";
+                                }
+                            </script>
+
+                <ul id="chatselect2" class="chat-list" style="display: block;">
+                    <li class="cli" style="width: 50%;">
+                        <span class="icon-help"></span><span class="name">Need Help or Support?</span><a href="https://secure.livechatinc.com/licence/7632681/v2/open_chat.cgi?groups=6" id="islpronto-link-Inet" target="_blank" class="btn livechatinc btn-default">Start Chat</a>
+                    </li>
+                    <li class="cli" style="width: 50%;">
+                        <span class="icon-services"></span><span class="name">Sales and Product Enquiries</span><a href="https://secure.livechatinc.com/licence/7632681/v2/open_chat.cgi?groups=5" id="sales" role="button" target="_blank" class="btn livechatinc btn-default">Start Chat</a>
+                    </li>
+                </ul>
+
+                <ul id="chatselect3" class="chat-list" style="display: none; padding-left: 0;">
+                    <li>
+                        <span class="icon-services"></span><span class="name" style="padding: 0; margin-left: -22px; margin-right: -22px;">Sales, Billing &amp; Products Enquiries</span>
+                        <a href="https://secure.livechatinc.com/licence/12265338/v2/open_chat.cgi?groups=4" target="_blank" id="islpronto-link-Inet" class="btn livechatinc btn-default">Start Chat</a>
+                    </li>
+                    <li>
+                        <span class="icon-mobile"></span><span class="name" style="padding: 0; margin-left: -22px; margin-right: -22px;">Mobile Technical Support</span>
+                        <a href="https://secure.livechatinc.com/licence/7632681/v2/open_chat.cgi?groups=0" target="_blank" id="islpronto-link-Mobile" class="btn livechatinc btn-default">Start Chat</a>
+                    </li>
+                    <li>
+                        <span class="icon-datacom"></span><span class="name" style="padding: 0; margin-left: -22px; margin-right: -22px;">Fixed line Technical Support</span>
+                        <a href="https://secure.livechatinc.com/licence/12265338/v2/open_chat.cgi?groups=3" id="islpronto-link-SD" class="btn livechatinc btn-default" target="_blank">Start Chat</a>
+                    </li>
+                </ul>
+                <ul id="chatselect4" class="chat-list" style="display: none; padding-left: 0;">
+                    <li>
+                        <span class="icon-services"></span><span class="name" style="padding: 0; margin-left: -22px; margin-right: -22px;">Sales, Billing &amp; Products Enquiries</span>
+                        <a href="https://secure.livechatinc.com/licence/12265338/v2/open_chat.cgi?groups=4" target="_blank" id="islpronto-link-Inet1" class="btn livechatinc btn-default">Start Chat</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="btn-help">
+        
+    </div>
+
+    </footer>
+
+    <button class="btn scroll-top" data-scroll="up" type="button" style="bottom: 20px; display: none;">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    
+
+    <script>
+                function updateCartBadge() {
+                    $.ajax({
+                        method: "POST",
+                        url: window.appRoot + '/Billing/GetCartCount',
+                        success: function (result) {
+                            $('.cart-badge').text(result.count);
+                        },
+                        error: function (xhr, error) {
+                            console.log(error);
+                        },
+                        cache: false
+                    });
+                }
+
+                function manuallyUpdateCartBadge(count) {
+                    $('.cart-badge').text(count);
+                }
+
+                function AutoPayBalanceBills() {
+                    BeginLoading();
+                    $.ajax({
+                        method: "Post",
+                        url: window.appRoot + '/AutoPay/AutoPayCall',
+                        success: function (result) {
+                            $.redirect(window.appRoot + '/AutoPay/Index');
+                        },
+                        error: function (xhr, error) {
+                            $.redirect(window.appRoot + '/AutoPay/Index');
+                        }
+                        ,
+                        cache: false
+                    }).always(function () {
+                        // End loading
+                        EndLoading();
+                    });
+                }
+
+
+                function PayOutstandingBalanceBills() {
+                    BeginLoading();
+                    $.ajax({
+                        method: "Post",
+                        url: window.appRoot +'/Billing/AddCurrentAccountOutstandingBillProfilesToCart',
+                        success: function (result) {
+                            $.redirect(window.appRoot + '/BillsPayment/Cart');
+                        },
+                        error: function (xhr, error) {
+                            $.redirect(window.appRoot + '/BillsPayment/Cart');
+                        },
+                        cache: false
+                    }).always(function () {
+                        // End loading
+                        EndLoading();
+                    });
+                }
+
+                function PayForBillProfile(billProfileId, amount) {
+                    BeginLoading();
+                    // Start loading
+                    $.ajax({
+                        method: "Post",
+                        url: window.appRoot + "/Billing/AddCartItemV2",
+                        data: { billProfileId: billProfileId, amount: amount },
+                        success: function (result) {
+                            console.log("Add to cart success!");
+                            $.redirect(window.appRoot + '/BillsPayment/Cart');
+                        },
+                        error: function (xhr, error) {
+                            $.redirect(window.appRoot + '/BillsPayment/Cart');
+                        },
+                        cache: false
+                    }).always(function () {
+                        // End loading
+                    });
+                }
+
+                function GetCustomerNotifications() {
+                    $.ajax({
+                        method: "GET",
+                        url: window.appRoot + "/Home/CustomerNotifications",
+                        success: function (data) {
+                            console.log("Got customer notifications.");
+                            $("#customer-notifications").html(data);
+
+                            // On notification bell click
+                            $("#notifications").on("click tap", function () {
+                                // Open the notification box
+                                $("#notifications-box").toggle();
+
+
+                                if ($("#notifications-box:visible").length !== 0) {
+                                    // After opening the notification box, consider all the notifications as read
+                                    // We'll prevent reading the notifications if we already made the request by checking the class
+                                    if (!$("#notifications-box").hasClass("all-read")) {
+                                        setTimeout(function () {
+                                            if ($(".notification-row.unread").length > 0) {
+                                                // If there's atleast one unread notification
+                                                MarkCustomerNotificationsAsRead();
+                                            }
+                                        },
+                                            2000);
+                                    }
+                                }
+                            });
+                        },
+                        error: function (xhr, error) {
+                            console.error("Failed to get customer notifications.", error);
+                        },
+                        cache: false
+                    });
+                }
+
+                function MarkCustomerNotificationsAsRead() {
+                    $.ajax({
+                        method: "Post",
+                        url: window.appRoot + "/Home/MarkCustomerNotificationsAsRead",
+                        success: function (result) {
+                            $("#notifications-box").addClass("all-read");
+                            console.log("Notifications read successfully!");
+                        },
+                        error: function (xhr, error) {
+                            console.log("Error reading notifications!");
+                        }
+                        ,
+                        cache: false
+                    });
+                }
+
+                function GetIEVersion() {
+                    var sAgent = window.navigator.userAgent;
+                    var Idx = sAgent.indexOf("MSIE");
+
+                    // If IE, return version number.
+                    if (Idx > 0)
+                        return parseInt(sAgent.substring(Idx + 5, sAgent.indexOf(".", Idx)));
+
+                    // If IE 11 then look for Updated user agent string.
+                    else if (!!navigator.userAgent.match(/Trident\/7\./))
+                        return 11;
+
+                    else
+                        return 0; //It is not IE
+                }
+
+                
+            </script>
+
+    
+    
+    <script src="/eservices/resources/js/bootbox.min.js"></script>
+    <script src="/eservices/resources/js/parsley.js"></script>
+    <script>
+
+        //slider
+        $(function () {
+            // Dropdown fix
+            $('.dropdown > a[tabindex]').keydown(function (event) {
+                // 13: Return
+
+                if (event.keyCode == 13) {
+                    $(this).dropdown('toggle');
+                }
+            });
+            $('.dropdown-submenu > a').submenupicker();
+        });
+
+        //
+        $(document).ready(function () {
+            GetLoginComponent();
+            localStorage.removeItem("selectedValue");
+            $('.flexslider').flexslider({
+                animation: "slide",
+
+            });
+
+
+
+
+
+            var validator;
+            $(".loadingdiv").css("display", "none");
+
+        });
+
+        // For Mobile Screen Left Menu slider
+        function openNav() {
+            if (document.getElementById("mySidenav").style.width != "100%") {
+                document.getElementById("mySidenav").style.width = "100%";
+            }
+            else {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        }
+
+        ///* Set the width of the side navigation to 0 */
+        //function closeNav() {
+        //    document.getElementById("mySidenav").style.width = "0";
+        //}
+
+        function loginSubmitBtn() {
+            //$("#loginform").parsley().validate();
+            var captchaId = "#showcaptcha";
+            var captchaElement = $(captchaId);           
+            loginformvalidate();
+            var RememberMe = String($('#login-remember').is(':checked'));
+            if (captchaElement.is(":visible")) {
+                var abc = captchaElement.is(":visible");
+                var x = validateCaptcha();
+                if (x == false) { return;};
+            } 
+            if (validator.validate()) {
+                var captcha = $("#CaptchaText").val();
+                BeginLoading();
+                $.ajax({
+                    type: "POST",
+                    url: "Login/LoginAction",
+                    data: {
+                        username: $("#username").val(),
+                        password: $("#pwd").val(),
+                        RememberMe: RememberMe,
+                        CaptchaText: captcha
+                    },
+                    success: function (msg) {
+                        window.location = "Home";
+                    },
+                    error: function (XMLHttpRequest, textStatus, errorThrown) {
+                        $("#signBoxActionContent").load('Login/GetLoginComponent', { "UserAgnet": navigator.userAgent });
+                        console.log(XMLHttpRequest, textStatus, errorThrown);
+                        EndLoading();
+                    },
+
+                    cache: false
+                });
+            }
+
+        }
+
+        function validateCaptcha() {
+            $("#loginformError").html("");
+            var captcha2 = $("#CaptchaText").val();
+            //Security Code Check:
+            if (captcha2 == null || captcha2 == "") {
+                $("#loginformError").html("<div class='alert alert-danger'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a><strong>Error! </strong>Enter Security Code</div>");
+
+
+                return false;
+            }
+            return true;
+        }
+
+        function GetLoginComponent() {
+            $("#signBoxActionContent").load('Login/GetLoginComponent', { "UserAgnet": navigator.userAgent });
+            if ($("#AutoLoginBTN").length > 0) {
+
+            }
+        }
+
+
+        function loginformvalidate() {
+            validator = $("#loginform").parsley({
+                errorClass: function () {
+                    $(this).parent(".input-group")
+                        .removeClass('has-success')
+                        .addClass('has-error has-feedback');
+                },
+                successClass: function () {
+                    $(this).parent(".input-group")
+                        .removeClass('has-error')
+                        .addClass('has-success has-feedback');
+                },
+                errorsContainer: function (el) {
+                    return el.$element.closest(".form-group");
+                },
+                errorsWrapper: '<div class="invalid-message"></div>',
+                errorTemplate: '<span></span>',
+            });
+        }
+
+        //function GetSignupComponent() {
+        //    $("#signBoxActionContent").load('Login/GetSignupComponent');
+        //}
+
+        function GetForgotPasswordComponent() {
+            $("#signBoxActionContent").load('Login/GetForgotPasswordComponent');
+        }
+
+        function RegistrationSubmitBtn() {
+            Registrationformvalidate();
+            if (validator.validate()) {
+                if (document.getElementById('Consumer').checked) {
+                    $("#actionContent").html("<br/><br/><div class='text-center'><img src='" + window.appRoot + "/resources/res/ajax-loader.gif'/><br/><small>Loading ...</small></div>");
+                    var idtypeVal = $('#Consumer').val();
+                    var numberVal = $('#PhoneNumber').val();
+                    var cprVal = $('#ConsumerCPR').val();
+                    var accountVal = $('#account').val();
+                    var emailVal = $('#email').val();
+                    var passwordVal = $('#password').val();
+                    var confirmPasswordVal = $('#confirmPassword').val();
+
+                    if (passwordVal == confirmPasswordVal) {
+                        $(".loadingdiv").css("display", "block");
+                        $.ajax({
+                            method: "Post",
+                            url: "performRegistrationConsumer",
+                            data: { Type: idtypeVal, Number: numberVal, CPR: cprVal, Account: accountVal, Email: emailVal, Password: passwordVal, PasswordConfirm: confirmPasswordVal },
+                            success: function (result) {
+                                var obj = result['Status'];
+                                var msg = result['errorMessage'];
+                                if (obj == "0") {
+                                    //$("#responseDiv").html("<div class='alert alert-success'>Registration Successfully</div>");
+                                    $("#responseDiv").html("<div class='alert alert-success'>" + msg + "</div>");
+                                }
+                                else {
+                                    $("#responseDiv").html("<div class='alert alert-danger'><strong>Error! </strong>" + msg + "</div>");
+                                }
+                            }
+                        }).always(function () {
+                            $(".loadingdiv").css("display", "none");
+                        });
+                    }
+                    else {
+                        $("#responseDiv").html("<div class='alert alert-danger'><strong>Error! </strong>Password Not Match</div>");
+                    }
+                }
+                else if (document.getElementById('Business').checked) {
+                    $("#actionContent").html("<br/><br/><div class='text-center'><img src='" + window.appRoot + "/resources/res/ajax-loader.gif'/><br/><small>Loading ...</small></div>");
+                    var idtypeVal = $('#Business').val();
+                    var numberVal = $('#PhoneNumber').val();
+                    var crVal = $('#businessCR').val();
+                    var accountVal = $('#account').val();
+                    var emailVal = $('#email').val();
+                    var passwordVal = $('#password').val();
+                    var confirmPasswordVal = $('#confirmPassword').val();
+                    if (passwordVal == confirmPasswordVal) {
+                        $(".loadingdiv").css("display", "block");
+                        $.ajax({
+                            method: "Post",
+                            url: "performRegistrationBusiness",
+                            data: { Type: idtypeVal, number: numberVal, CR: crVal, Account: accountVal, Email: emailVal, Password: passwordVal, PasswordConfirm: confirmPasswordVal },
+                            success: function (result) {
+                                var obj = result['Status'];
+                                var msg = result['errorMessage'];
+                                if (obj == "0") {
+                                    $("#responseDiv").html("<div class='alert alert-success'>Registration Successfully</div>");
+                                    $("#responseDiv").html("<div class='alert alert-success'>" + msg + "</div>");
+
+                                }
+                                else {
+                                    $("#responseDiv").html("<div class='alert alert-danger'><strong>Error! </strong>" + msg + "</div>");
+                                }
+                            }
+                        }).always(function () {
+                            $(".loadingdiv").css("display", "none");
+                        });
+                    }
+                    else {
+                        $("#responseDiv").html("<div class='alert alert-danger'><strong>Error! </strong>Password Not Match</div>");
+                    }
+                }
+                else {
+                    $("#responseDiv").html("<div class='alert alert-danger'><strong>Error! </strong>Please select ID Type</div>");
+                }
+            }
+        }
+        function refreshCaptcha() {
+            $("#loginformError").html("");
+            var datetime = Date.now();
+            $("#captchaDiv").html('<img id="captchImg" style="padding-top: 3px;" src="/eservices/Help/CaptchaImage?' + datetime + '"><a href="#" id="captchaRef" onclick="refreshCaptcha();" class="fa fa-refresh" style="vertical-align:middle;padding-left:5px;"></a>');
+        }
+
+        function getsetCaptcha() {
+            var captchaId = "#showcaptcha";
+            var captchaElement = $(captchaId);
+            //$(element).is(":hidden");
+            if (captchaElement.is(":visible")) {
+                $.ajax({
+                    method: "Post",
+                    url: "Login/RemoveCaptcha",
+                    data: { username: $("#username").val(), },
+                    success: function (result) {
+                        if (result == false) {
+                            $('#showcaptcha').css("visibility", "hidden");
+                            $('#showcaptcha').hide();
+                            $("#loginformError").html("");
+                        }
+                    }
+                });
+            }
+
+        }
+
+
+
+    </script>
+
+    </div>
+
+<div id="chat-widget-container" style="opacity: 0; visibility: hidden; z-index: -1; position: fixed; bottom: 0px; width: 84px; height: 84px; max-width: 100%; max-height: calc(100% - 0px); min-height: 0px; min-width: 0px; background-color: transparent; border: 0px none; overflow: hidden; right: 0px; transition: none 0s ease 0s !important;"><iframe allow="microphone *; camera *; display-capture *; fullscreen *;" src="https://secure.livechatinc.com/customer/action/open_chat?license_id=7632681&amp;group=9&amp;embedded=1&amp;widget_version=3&amp;unique_groups=0" allowtransparency="true" id="chat-widget" name="chat-widget" title="LiveChat chat widget" scrolling="no" style="width: 100%; height: 100%; min-height: 0px; min-width: 0px; margin: 0px; padding: 0px; background-image: none; background-position: 0% 0%; background-size: initial; background-attachment: scroll; background-origin: initial; background-clip: initial; background-color: rgba(0, 0, 0, 0); border-width: 0px; float: none; color-scheme: normal; position: absolute; inset: 0px; transition: none 0s ease 0s !important; display: none;"></iframe><iframe allowtransparency="true" id="chat-widget-minimized" name="chat-widget-minimized" title="LiveChat chat widget" scrolling="no" style="width: 100%; height: 100%; min-height: 0px; min-width: 0px; margin: 0px; padding: 0px; background-image: none; background-position: 0% 0%; background-size: initial; background-attachment: scroll; background-origin: initial; background-clip: initial; background-color: rgba(0, 0, 0, 0); border-width: 0px; float: none; color-scheme: normal; display: block;"></iframe></div></body></html>
